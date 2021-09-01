@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://wechaty.js.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://wechaty.js.org/" rel="alternate" type="text/html" /><updated>2021-09-01T15:37:34+00:00</updated><id>https://wechaty.js.org/feed.xml</id><title type="html">Wechaty</title><subtitle>Conversational RPA SDK for Chatbot Makers</subtitle><entry><title type="html">OSPP 2021-期中报告-开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块</title><link href="https://wechaty.js.org/2021/08/30/ospp-mid-term-5g-chatbot-puppet/" rel="alternate" type="text/html" title="OSPP 2021-期中报告-开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块" /><published>2021-08-30T00:00:00+00:00</published><updated>2021-08-30T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/30/ospp-mid-term-5g-chatbot-puppet</id><content type="html" xml:base="https://wechaty.js.org/2021/08/30/ospp-mid-term-5g-chatbot-puppet/">&lt;p&gt;“&lt;a href=&quot;https://summer.iscas.ac.cn&quot;&gt;开源软件供应链点亮计划-暑期2021&lt;/a&gt;”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。&lt;/p&gt;
+
+&lt;p&gt;本项目 [开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块] 系 暑期2021 支持的开源项目。&lt;/p&gt;
+
+&lt;h2 id=&quot;开发支持电信运营商-5g-chatbot--rcs-的-wechaty-接入-puppet-模块信息&quot;&gt;[开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块]信息&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;导师：[李佳芮  康嘉  李卓桓]&lt;/li&gt;
+  &lt;li&gt;学生：[张瑞宁  邵琦]&lt;/li&gt;
+  &lt;li&gt;项目介绍：&lt;a href=&quot;https://github.com/wechaty/summer/issues/74&quot;&gt;https://github.com/wechaty/summer/issues/74&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;项目名称：  开发支持电信运营商 5G Chatbot / RCS 的 Wechaty 接入 Puppet 模块&lt;/li&gt;
+  &lt;li&gt;方案描述：
+    &lt;ul&gt;
+      &lt;li&gt;使用5g Chatbot接口，把收发消息测通&lt;/li&gt;
+      &lt;li&gt;使用 &lt;a href=&quot;https://github.com/wechaty/wechaty-puppet-official-account&quot;&gt;https://github.com/wechaty/wechaty-puppet-official-account&lt;/a&gt; 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用&lt;/li&gt;
+      &lt;li&gt;发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收&lt;/li&gt;
+      &lt;li&gt;进行测试，完善项目文档&lt;/li&gt;
+      &lt;li&gt;配置 GitHub Actions 实现自动化测试（可选）&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;时间规划：
+    &lt;ul&gt;
+      &lt;li&gt;使用5g Chatbot接口，把收发消息测通
+        &lt;ul&gt;
+          &lt;li&gt;7/12 - 7/18&lt;/li&gt;
+          &lt;li&gt;配置好服务器，测通相关接口&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;使用 &lt;a href=&quot;https://github.com/wechaty/wechaty-puppet-official-account&quot;&gt;https://github.com/wechaty/wechaty-puppet-official-account&lt;/a&gt; 项目作为模版，将其中的微信公众平台调用全部封装为RCS模块的调用
+        &lt;ul&gt;
+          &lt;li&gt;7/19 - 8/10&lt;/li&gt;
+          &lt;li&gt;学习现有源码，学习RCS的相关知识。&lt;/li&gt;
+          &lt;li&gt;接入wechaty，进行代码整合，提高代码质量。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;项目中期总结
+        &lt;ul&gt;
+          &lt;li&gt;8/11 - 8/15&lt;/li&gt;
+          &lt;li&gt;实现阶段性目标，总结项目阶段性成果。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;发布 Git Repo wechaty-puppet-5g-msg，实现文本消息的发送和接收
+        &lt;ul&gt;
+          &lt;li&gt;8/16 - 8/31&lt;/li&gt;
+          &lt;li&gt;提供一个 examples/ding-dong-bot.ts ，完成“接收到文字消息ding时，自动回复消息dong”的功能&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;项目完善优化
+        &lt;ul&gt;
+          &lt;li&gt;9/1 - 9/15&lt;/li&gt;
+          &lt;li&gt;撰写整个项目过程的总结博客。配置 GitHub Actions 实现自动化测试，增加单元测试等。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;项目结项
+        &lt;ul&gt;
+          &lt;li&gt;9/16 - 9/30&lt;/li&gt;
+          &lt;li&gt;总结项目成果，项目经验，准备结项材料。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;项目进度&quot;&gt;项目进度&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;已完成工作：
+    &lt;ul&gt;
+      &lt;li&gt;熟悉开发工具，了解硬核桃和Wechaty接口技术规范&lt;/li&gt;
+      &lt;li&gt;配置好服务器，测通5G消息上下行接口，成功进行接受和发送消息的测试&lt;/li&gt;
+      &lt;li&gt;学习平台目前Wechaty调用其他其他平台RCS源码方案&lt;/li&gt;
+      &lt;li&gt;学习typescript&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;遇到的问题及解决方案：
+    &lt;ul&gt;
+      &lt;li&gt;Q：不清楚如何配置服务器&lt;/li&gt;
+      &lt;li&gt;S：与康嘉老师线上视频请教服务器配置方案，成功解决&lt;/li&gt;
+      &lt;li&gt;Q：不熟悉git的PR流程&lt;/li&gt;
+      &lt;li&gt;S：参考github Action相关文档以及Wechaty社区提供的博客完成&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;后续工作安排：
+    &lt;ul&gt;
+      &lt;li&gt;尽快熟悉已有项目的源码&lt;a href=&quot;https://github.com/wechaty/wechaty-puppet-official-account&quot;&gt;https://github.com/wechaty/wechaty-puppet-official-account&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;继续补充完善项目功能,如：通过 5G Chatbot / RCS 底层，实现文本消息的收发功能，提供一个 examples/ding-dong-bot.ts ，接收到文字消息ding时，自动回复消息dong，添加收发图片和文档等功能 。&lt;/li&gt;
+      &lt;li&gt;进行项目测试并提交pr。&lt;/li&gt;
+      &lt;li&gt;完善项目文档。&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;项目成果&quot;&gt;项目成果&lt;/h2&gt;
+
+&lt;p&gt;项目仓库: &lt;a href=&quot;https://github.com/zrn-fight/wechaty-puppet-walnut&quot;&gt;https://github.com/zrn-fight/wechaty-puppet-walnut&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;live-coding视频&quot;&gt;live coding视频：&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/qGl0zXtDL4s&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;ppt展示视频&quot;&gt;PPT展示视频：&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/vCV0ijD0R9g&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;项目ppt&quot;&gt;项目PPT：&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;/assets/js/viewer-js/#/assets/2021/08-ospp-mid-term-5g-chatbot-puppet/5g-chatbot-ppt.pdf&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;联系我们&quot;&gt;联系我们&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;项目链接：&lt;a href=&quot;https://github.com/wechaty/summer/issues/74&quot;&gt;https://github.com/wechaty/summer/issues/74&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;联系方式：
+    &lt;ul&gt;
+      &lt;li&gt;张瑞宁：3134191406@qq.com&lt;/li&gt;
+      &lt;li&gt;邵琦：shaoqichn@qq.com&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>zrn-fight</name></author><category term="project" /><category term="ospp" /><category term="summer-of-wechaty" /><category term="summer-2021" /><category term="ospp" /><category term="ospp-2021" /><category term="plan" /><category term="mid-term" /><category term="other" /><summary type="html">“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。活动联合各大开源社区，针对重要开源软件的开发与维护提供项目，并向全球高校学生开放报名。 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。 根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-ospp-mid-term-5g-chatbot-puppet/walnut-wechaty.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-ospp-mid-term-5g-chatbot-puppet/walnut-wechaty.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Wechaty 开源社区文档协作 Google Season of Docs 实践分享</title><link href="https://wechaty.js.org/2021/08/26/gdg-community-talk-google-season-of-docs/" rel="alternate" type="text/html" title="Wechaty 开源社区文档协作 Google Season of Docs 实践分享" /><published>2021-08-26T00:00:00+00:00</published><updated>2021-08-26T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/26/gdg-community-talk-google-season-of-docs</id><content type="html" xml:base="https://wechaty.js.org/2021/08/26/gdg-community-talk-google-season-of-docs/">&lt;p&gt;Google Season of Docs （GSoD）是 Google 自 2019 年发起的一项面向全球开源社区的文档支持计划，目标是为开源社区提供资金、指导完善他们的开源项目文档，并且通过了解开源社区的文档协作情况，帮助更多开发者习得专业的技术文档写作方法。&lt;/p&gt;
+
+&lt;p&gt;入选的 GSoD 的开源项目，除了可以得到 5000-15000 元美金的资金资助以外。组织会帮助开源项目一起对现有技术文档进行重新设计，创建新的文档体系，优化技术文档的生产流程，以创作出更优质的技术文档内容。&lt;/p&gt;
+
+&lt;p&gt;在今年的 GSoD 中，全球共有 30 个项目最终入选 GSoD，其中作为中国首位入选的中国开源项目 Wechaty，获得了广泛的关注。在项目期间，共有 12 位技术文档专家共同参与、协作，完成了对 Wechaty 技术文档的优化与完善。&lt;/p&gt;
+
+&lt;p&gt;Wechaty 作者李卓桓（谷歌机器学习开发者专家）将通过社区说的直播，和大家一起分享这一段实践经验。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;谷歌开发者专家 (Machine Learning)&lt;/li&gt;
+  &lt;li&gt;TensorFlow.js 布道师&lt;/li&gt;
+  &lt;li&gt;《Chatbot 从 0 到 1》《简明的 TensorFlow 2》联合作者&lt;/li&gt;
+  &lt;li&gt;GitHub 万星开源 Conversational SDK Wechaty 作者&lt;/li&gt;
+  &lt;li&gt;PreAngel 天使投资人，专注 AI/Chatbot 领域创业团队和项目&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wechaty-开源社区文档协作实践分享&quot;&gt;Wechaty 开源社区文档协作实践分享&lt;/h2&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/6sTGgH9qsl0&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;YouTube: &lt;a href=&quot;https://youtu.be/6sTGgH9qsl0&quot;&gt;https://youtu.be/6sTGgH9qsl0&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;0:00 社区说活动开场：GDG 主持人袁衮衮介绍&lt;/li&gt;
+  &lt;li&gt;5:10 Huan 自我介绍&lt;/li&gt;
+  &lt;li&gt;7:54 Wechaty 对话式交互SDK简介&lt;/li&gt;
+  &lt;li&gt;14:48 Documentation System 介绍&lt;/li&gt;
+  &lt;li&gt;54:03 介绍 Google Season of Docs (GSoD)&lt;/li&gt;
+  &lt;li&gt;46:28 Wechaty 的 GSoD 体验：与全球13位 Tech Writer 进行文档协作&lt;/li&gt;
+  &lt;li&gt;54:02 Demo 演示: Wechaty Ding/Dong Bot&lt;/li&gt;
+  &lt;li&gt;1:08:53 互动问答&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;slides&quot;&gt;Slides&lt;/h2&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vQV8hJWS97ga10fhfaC3wwEmwBWRoC9csmv3tQOspRzBFb-PAwfEC6azXubXabBZ8gb4SkzQHMg40ba/embed?start=true&amp;amp;loop=true&amp;amp;delayms=3000&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;Wechaty Google Season of Docs&lt;/em&gt; Slides is hosted on Google Slides(Docs) at &lt;a href=&quot;https://docs.google.com/presentation/d/119WsvvWP9ERFtkAqHLzEFquDsR073Mlh-j_JsOyVHPE&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;blogs&quot;&gt;Blogs&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/2021/05/08/gsod-2021-selected-technical-writers/&quot;&gt;Hello Wechaty GSoD’21 Technical Writers!, @huan, May 08, 2021&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/2021/04/30/google-season-of-docs/&quot;&gt;Google Season of Docs ❤️ Wechaty, @huan, Apr 30, 2021&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/docs/gsod/2021/&quot;&gt;Google Season of Docs 2021 proposal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;关于社区说&quot;&gt;关于社区说&lt;/h2&gt;
+
+&lt;p&gt;「社区说」是由谷歌开发者社区 (Google Developer Group) 与谷歌开发者专家计划 (Google Developer Expert) 联合推出的社区项目。每周四晚 8 点到 9 点，与热爱技术的开发者们一同交流技术，进行代码直播、讨论产品、分享心得的小型线上会议。&lt;/p&gt;
+
+&lt;p&gt;活动将由不同的谷歌开发者社区举办并邀请来自国内的不同技术方向的谷歌开发者专家以及对技术有热情、愿意分享的嘉宾，一起来聊一聊最近做的项目，最近写的代码，或者三五技术好友互相探讨聊天。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Source: &lt;a href=&quot;https://mp.weixin.qq.com/s/uBOhGXdJIXZ_5_Cu0gUq-Q&quot;&gt;听 Google Season of Docs 入选项目谈文档协作&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>huan</name></author><category term="talk" /><category term="gsod" /><category term="google" /><category term="gdg" /><category term="news" /><summary type="html">Google Season of Docs （GSoD）是 Google 自 2019 年发起的一项面向全球开源社区的文档支持计划，目标是为开源社区提供资金、指导完善他们的开源项目文档，并且通过了解开源社区的文档协作情况，帮助更多开发者习得专业的技术文档写作方法。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-gdg-community-talk-google-season-of-docs/gdg-community-talk-gsod-wechaty.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-gdg-community-talk-google-season-of-docs/gdg-community-talk-gsod-wechaty.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">OSPP 2021-期中报告-基于 Wechaty 开发开源的二师兄社群逗乐机器人</title><link href="https://wechaty.js.org/2021/08/26/ospp-mid-term-wechaty-piggy-bro/" rel="alternate" type="text/html" title="OSPP 2021-期中报告-基于 Wechaty 开发开源的二师兄社群逗乐机器人" /><published>2021-08-26T00:00:00+00:00</published><updated>2021-08-26T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/26/ospp-mid-term-wechaty-piggy-bro</id><content type="html" xml:base="https://wechaty.js.org/2021/08/26/ospp-mid-term-wechaty-piggy-bro/">&lt;h2 id=&quot;暑期2021&quot;&gt;暑期2021&lt;/h2&gt;
+
+&lt;p&gt;“开源软件供应链点亮计划-暑期2021”（以下简称 暑期2021）是由中科院软件所与 openEuler 社区共同举办的一项面向高校学生的暑期活动。
+旨在鼓励在校学生积极参与开源软件的开发维护，促进国内优秀开源软件社区的蓬勃发展。
+根据项目的难易程度和完成情况，参与者还可获取“开源软件供应链点亮计划-暑期2021”活动奖金和奖杯。
+官网：&lt;a href=&quot;https://summer.iscas.ac.cn/&quot;&gt;https://summer.iscas.ac.cn/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本项目 [基于 Wechaty 开发开源的二师兄社群逗乐机器人] 系 暑期2021 支持的开源项目。&lt;/p&gt;
+
+&lt;h2 id=&quot;项目信息&quot;&gt;项目信息&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;导师：韩磊、鲁玉超、王玉丹&lt;/li&gt;
+  &lt;li&gt;学生：井维嘉&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;项目介绍：&lt;a href=&quot;https://github.com/wechaty/summer-of-wechaty/issues/83&quot;&gt;https://github.com/wechaty/summer-of-wechaty/issues/83&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;项目名称：基于 Wechaty 开发开源的二师兄社群逗乐机器人&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;方案描述&lt;/p&gt;
+
+    &lt;p&gt;本项目需要基于Wechaty开发一个多功能群聊机器人。&lt;/p&gt;
+
+    &lt;p&gt;该机器人的核心功能是编写并配置&lt;strong&gt;拦截器&lt;/strong&gt;来实现对消息的响应。拦截器是一种&lt;strong&gt;固定传入参数和返回值类型的函数&lt;/strong&gt;，通过编写拦截器的逻辑，可以&lt;strong&gt;拦截消息&lt;/strong&gt;或&lt;strong&gt;放行消息给下一个拦截器&lt;/strong&gt;，同时&lt;strong&gt;做出一定的响应&lt;/strong&gt;。&lt;/p&gt;
+
+    &lt;p&gt;本项目&lt;strong&gt;预置了若干功能&lt;/strong&gt;，如查天气、讲笑话、成语接龙、猜字谜等以供使用和参考。同时，本项目希望能够&lt;strong&gt;允许用户自行添加功能&lt;/strong&gt;，所以用户可以通过自己编写拦截器的方式，来为机器人添加功能。&lt;/p&gt;
+
+    &lt;p&gt;本项目也将提供一个&lt;strong&gt;二师兄后花园&lt;/strong&gt;页面，作为扩展的帮助文档、状态查询和日活功能使用。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;时间规划：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;开发可扩展式开发框架（7.1-7.7）
+        &lt;ul&gt;
+          &lt;li&gt;熟悉Wechaty开发模式&lt;/li&gt;
+          &lt;li&gt;搭建二师兄开发脚手架&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;具体功能实现（7.8-7.30）
+        &lt;ul&gt;
+          &lt;li&gt;初步实现要求中的具体功能，可能包括且不限于：讲笑话、看热搜、查天气、成语接龙、猜图片、猜歌名&lt;/li&gt;
+          &lt;li&gt;初步编写相关功能API的注册与部署文档&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;设计二师兄Logo及形象（8.1-8.7）
+        &lt;ul&gt;
+          &lt;li&gt;为二师兄的Logo和形象做出初步描述&lt;/li&gt;
+          &lt;li&gt;Logo及形象定稿&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;开发二师兄后花园（8.8-8.30）
+        &lt;ul&gt;
+          &lt;li&gt;设计后花园功能和页面布局&lt;/li&gt;
+          &lt;li&gt;搭建二师兄后花园服务及页面&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;编写文档与完善功能（9.1-9.30）
+        &lt;ul&gt;
+          &lt;li&gt;编写使用、部署及开发文档&lt;/li&gt;
+          &lt;li&gt;整理代码并完善功能&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;项目进度&quot;&gt;项目进度&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;已完成工作&lt;/p&gt;
+
+    &lt;p&gt;目前已经完成了机器人基本框架的全部搭建，并且提供了讲笑话、看热搜、查天气、搜音乐、成语接龙、猜字谜的预置功能。&lt;/p&gt;
+
+    &lt;p&gt;二师兄的Logo已基本定稿。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;遇到的问题及解决方案&lt;/p&gt;
+
+    &lt;p&gt;目前的主要问题是不能很好地应对自然语义的复杂环境。&lt;/p&gt;
+
+    &lt;p&gt;由于设计上希望响应尽可能快速、高效，目前提供的示例插件均使用正则表达式来检查功能触发、解析参数。这样做有两个缺点：&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;正则表达式的覆盖虽广，却也不全面。&lt;/p&gt;
+
+        &lt;p&gt;例如查天气功能中，预设了两种触发方式：“二师兄，查xx天气”和“二师兄，xx天气如何/怎么样”。但事实上问天气不止有这些问法，还有如“xx的天好不好”、“xx在下雨吗”等问法。这些特殊的问法并不能被正则表达式解析。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;正则表达式对参数的提取不是非常好。&lt;/p&gt;
+
+        &lt;p&gt;依旧以查天气功能距离，“二师兄，xx天气如何”这句话，关键在于提取出地名。但是由于“二师兄”这一触发词后面就是参数，所以提取地名就稍显困难。另外就如上一条举例，“xx在下雨吗”这类问话中，用户还表达了&lt;strong&gt;xx是否在下雨&lt;/strong&gt;这一含义，这时更符合自然语言的应答应该是“xx在下雨”或“xx没有在下雨”。正则表达式暂时还做不到这些。&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;关于这一问题的解决方案，有一种是接入微信开放平台的语境检测API，这样可以较为准确地识别语义。另外也可以考虑使用&lt;strong&gt;jieba&lt;/strong&gt;库分词来解决语义分析和参数提取的问题。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;后续工作安排&lt;/p&gt;
+
+    &lt;p&gt;后续工作与计划基本一致，优先考虑完成计划清单上的任务。&lt;/p&gt;
+
+    &lt;p&gt;另外，计划着手对于拦截器的逻辑做进一步优化，允许开发者为功能配置预检和帮助文本。&lt;/p&gt;
+
+    &lt;p&gt;关于自然语义识别这方面将会视产能而定。、&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;项目成果&quot;&gt;项目成果&lt;/h2&gt;
+
+&lt;p&gt;项目仓库：&lt;a href=&quot;https://github.com/ReiKohaku/piggy-bro&quot;&gt;https://github.com/ReiKohaku/piggy-bro&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;live-code视频&quot;&gt;Live Code视频&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/i1AhcgQzQHw&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;ppt展示视频&quot;&gt;PPT展示视频&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/VQ56QFz69Ek&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;项目ppt&quot;&gt;项目PPT&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;/assets/js/viewer-js/#/assets/2021/08-ospp-mid-term-wechaty-piggy-bro/mid-term-ppt.pdf&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;其它&quot;&gt;其它&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;项目链接：&lt;a href=&quot;https://github.com/wechaty/summer-of-wechaty/issues/83&quot;&gt;https://github.com/wechaty/summer-of-wechaty/issues/83&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;联系方式：&lt;/p&gt;
+
+    &lt;p&gt;微信：ReiKohaku
+E-mail：hbsjzjwj@163.com&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>reikohaku</name></author><category term="project" /><category term="ospp" /><category term="chat" /><category term="summer-of-wechaty" /><category term="summer-2021、" /><category term="ecosystem" /><category term="ospp" /><category term="ospp-2021" /><category term="mid-term" /><summary type="html">暑期2021</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-ospp-mid-term-wechaty-piggy-bro/piggy-bro-logo.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-ospp-mid-term-wechaty-piggy-bro/piggy-bro-logo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基于python-Wechaty的微信群虚拟币报价机器人</title><link href="https://wechaty.js.org/2021/08/26/wechaty-bot-of-coins/" rel="alternate" type="text/html" title="基于python-Wechaty的微信群虚拟币报价机器人" /><published>2021-08-26T00:00:00+00:00</published><updated>2021-08-26T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/26/wechaty-bot-of-coins</id><content type="html" xml:base="https://wechaty.js.org/2021/08/26/wechaty-bot-of-coins/">&lt;p&gt;本项目基于&lt;a href=&quot;https://github.com/wechaty/python-wechaty&quot;&gt;python-wechaty&lt;/a&gt;库，通过几行代码就能实现微信机器人的基础功能。&lt;br /&gt;
+项目地址:&lt;a href=&quot;https://github.com/atom-zh/coins_market_push&quot;&gt;coins_market_push&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;实现功能&quot;&gt;实现功能&lt;/h2&gt;
+
+&lt;p&gt;群聊中加密货币的报价&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;检索群聊中的加密货币币种关键词&lt;/li&gt;
+  &lt;li&gt;币种匹配成功，从网络获取加密货币行情，目前支持三种平台&lt;/li&gt;
+  &lt;li&gt;在群聊中发送加密货币行情信息，并@发送者&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;效果展示&quot;&gt;效果展示&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-wechaty-bot-of-coins/demo.webp&quot; alt=&quot;效果展示&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;使用步骤&quot;&gt;使用步骤&lt;/h2&gt;
+
+&lt;h3 id=&quot;1项目配置&quot;&gt;1、项目配置&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Notice&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;EVENT_NAME&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'notice_python'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;TOKEN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'{your IFTTT TOKEN}'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;KEY&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'{your notice key}'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Zengr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;APP_CODE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'{your app code}}'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# fxh币种列表
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;PATH_JSON&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path_root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/coin_list.json'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WECHAT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# wechaty token的配置
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;TOKEN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'{your wechaty token}'&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CoinGK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# CoinGeCko的币种列表
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;PATH_JSON&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path_root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/conin_list_cgk.json'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notice: 通过IFTTT发送通知到手机(仅测试了iphone)，这里可以配置IFTTT的token&lt;/li&gt;
+  &lt;li&gt;Zengr：加密货币行情提供商，新用户有免费次数，目前收集的币种不多，不推荐&lt;/li&gt;
+  &lt;li&gt;CoinGK：提供免费API可以获取行情，但免费版功能受限，能满足基本要求&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;本项目默认使用非小号网站数据，不需要token，注意使用时要自律&lt;/em&gt;
+&lt;em&gt;目前我们使用的wechaty token是官方的免费版，仅7天试用期。如果要使用长期版本的话，您可以成为wechaty的贡献者，或者花钱购买。&lt;/em&gt;
+&lt;em&gt;毕竟钱能解决的事情，都不算事情。&lt;/em&gt;
+&lt;em&gt;还有一种方式，就是使用UOS的web协议登陆，参考&lt;a href=&quot;https://python-wechaty.readthedocs.io/zh_CN/latest/introduction/use-web-protocol/&quot;&gt;使用免费Web协议&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;2主要代码&quot;&gt;2、主要代码&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;talk is cheep, show you the code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;wechety.py&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;async&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;on_message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Optional&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;startswith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'@Robot'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;rev_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rev_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;talker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_conin_seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;await&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;room&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;say&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mention_ids&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;talker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;contact_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这里是消息处理入口，get_price(symbol): symbol为币种，get_price()函数返回币种行情。get_conin_seq函数用于检查是否支持symbol币种。&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_price&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;upper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_conin_seq&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;symbol&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_coin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【名称】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'fullname'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'-'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'name'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【USD价格】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'$'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'current_price_usd'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【CNY价格】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'¥'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'current_price'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【全球市值】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'$'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'%.2f'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'marketcap'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'亿&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【24H涨幅】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'change_percent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'%&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'【24H换手】 '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'turnoverrate'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'%&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strftime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%Y-%m-%d %H:%M:%S&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;localtime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt; \
+            &lt;span class=&quot;s&quot;&gt;'数据来源：非小号'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ret&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这里是get_price的具体实现，目前支持非小号前500个币种。&lt;/p&gt;
+
+&lt;h3 id=&quot;3运行&quot;&gt;3、运行&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python wechat/wechaty.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;扫码登录后，其他用户在添加了机器人的群中直接发送币种（symbol），例如（btc、eth等），稍后机器人便会发送此币种行情到微信群中，并@发送者查收。&lt;/p&gt;
+
+&lt;h2 id=&quot;注意&quot;&gt;注意&lt;/h2&gt;
+
+&lt;p&gt;要注意一下，对于个人账户来说，币价查询访问不要太频繁，容易被服务器检测。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;作者: &lt;a href=&quot;https://github.com/atom-zh&quot;&gt;刘小龙&lt;/a&gt;，默默无闻的嵌入式工程师&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>atom-zh</name></author><category term="project" /><category term="finance" /><category term="wechaty-bot" /><category term="python" /><category term="coins" /><summary type="html">本项目基于python-wechaty库，通过几行代码就能实现微信机器人的基础功能。 项目地址:coins_market_push</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-wechaty-bot-of-coins/demo.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-wechaty-bot-of-coins/demo.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">基于 wechaty 的 AR+LBS 漂流瓶轻社交游戏</title><link href="https://wechaty.js.org/2021/08/21/super-interstellar-terminal/" rel="alternate" type="text/html" title="基于 wechaty 的 AR+LBS 漂流瓶轻社交游戏" /><published>2021-08-21T00:00:00+00:00</published><updated>2021-08-21T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/21/super-interstellar-terminal</id><content type="html" xml:base="https://wechaty.js.org/2021/08/21/super-interstellar-terminal/">&lt;p&gt;基于&lt;strong&gt;微信聊天的 结合增强现实技术（AR）+LBS(暂时基于图像）&lt;/strong&gt; 的&lt;strong&gt;星际漂流瓶&lt;/strong&gt; 的轻社交游戏。重新认识你身边的世界，或许我们早已与外星生命共同生活着。&lt;/p&gt;
+
+&lt;h2 id=&quot;a-项目介绍&quot;&gt;A. 项目介绍&lt;/h2&gt;
+
+&lt;h3 id=&quot;a1-项目模块&quot;&gt;A.1 项目模块：&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;项目由下面的模块组成，每个模块都可以单独使用，也可组合使用，如：直接按需就调用图像生成外星人、外星生物、外星植物、外星建筑&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;简要&lt;/th&gt;
+      &lt;th&gt;具体描述&lt;/th&gt;
+      &lt;th&gt;项目中的代码及模型&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;1.基于 LSGAN 的外星生物生成&lt;/strong&gt;，利用爬虫与 GAN 生成我们想要的东西的过程&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.1&lt;/td&gt;
+      &lt;td&gt;Train.zip&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;2.快速调用PaddleSeg的cityscapes模型&lt;/strong&gt;，进行18类常见物体的分割&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.2&lt;/td&gt;
+      &lt;td&gt;CityscapesModule.py +PetModel文件夹&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;3.OpenCV的seamlessClone实现图像融合&lt;/strong&gt;，呈现各种AR效果,遮挡关系等&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.3&lt;/td&gt;
+      &lt;td&gt;alienPetModule.py&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;4.外星人换脸&lt;/strong&gt;，外星人脸与地球人脸融合效果的优化&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.4&lt;/td&gt;
+      &lt;td&gt;alienHeadModule.py&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;5.YUV颜色空间实现颜色图案迁移&lt;/strong&gt;，基于CV技术生成外星植物&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.5&lt;/td&gt;
+      &lt;td&gt;vegetateModule.py&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;6.PaddleHub的msgnet实现图像迁移&lt;/strong&gt;，基于深度学习生成类流沙或沙画效果&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 C.6&lt;/td&gt;
+      &lt;td&gt;sandModule.py + msgnet文件夹&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;7.Wechaty漂流瓶游戏&lt;/strong&gt;，微信漂流瓶及通过开发者模式控制整个流程&lt;/td&gt;
+      &lt;td&gt;请跳转到本页中的 D&lt;/td&gt;
+      &lt;td&gt;bot文件夹&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/4front.webp&quot; alt=&quot;4front&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;a2-太空漂流信息&quot;&gt;A.2 太空漂流信息&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;你可能收到来自一个未知星域发过来的漂流瓶，你也可以把你想抒发的情感发向星际中&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;嗨，别来无恙啊，此刻的你是否有些孤独，别怕，此时此刻，在浩瀚宇宙中，总有与你相似的灵魂，你们或许来自不同的星球，有着不同的文明，但你们仍然可以通过太空漂流瓶去表达内心的情感，快来开启你的太空漂流瓶之旅吧。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;用户可以在加本官方微信好友后，向本官方微信发出包含文本与图片的漂流瓶。也可以主动接收漂流瓶。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;甚至，在一个你意想不到的时刻会收到想象之外的漂流瓶信息。发送与接收漂流瓶都可以提升等级噢！&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a3-增强现实技术ar位置服务lbs的游戏&quot;&gt;A.3 增强现实技术（AR）+位置服务（LBS）的游戏&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;接收漂流瓶任务，或主动出击，寻找身边潜藏的外星人、外星生物（宠物）、外星植物、外星建筑&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;基于微信聊天中的图片及文本聊天。通过文本接受到任务或主动触发。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可能是让用户帮忙寻找它丢失的某个外星宠物（外星生物），或者帮它找到急需用于治疗的外星植物，也可能是让你帮忙找到正在被通缉的外星人囚犯。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a4-体验视频建议全屏观看&quot;&gt;A.4 体验视频：（建议全屏观看）&lt;/h3&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 70%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://player.bilibili.com/player.html?bvid=BV1hL411E79M&amp;amp;high_quality=1&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;欢迎小伙伴推荐地点及地点图片或直接加入本项目，可以先star或Fork跟踪更新进度&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;github地址：&lt;a href=&quot;https://github.com/kevinfu1717/SuperInterstellarTerminal&quot;&gt;https://github.com/kevinfu1717/SuperInterstellarTerminal&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;扫码加群，按群公告操作即可体验&lt;/strong&gt;      &lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/qr-code.webp&quot; alt=&quot;qr-code&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;b-故事背景&quot;&gt;B. 故事背景&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;地球并不只是人类的天下，其实有数万名外星人及其外星低等生物生活在我们当中，他们有的因为母星被毁有的因为星际战乱而选择到地球避难。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;银河星际移民局则管理并协调着他们在地球的生活。借助超高级科技，他们隐藏原来的外观，装扮成是普通地球人，我们根本分辨不出来，说不定，站在你旁边的就是一位外星友人。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;同时，他们也带来了外星的低等生物及外星植物，通过超科技把他们隐藏起来，装扮成地球物种或我们完全看不到。&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/bg.webp&quot; alt=&quot;bg&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;c-项目中的技术功能介绍&quot;&gt;C. 项目中的技术功能介绍&lt;/h2&gt;
+
+&lt;h3 id=&quot;c1-ai寻找你身边的外星生物&quot;&gt;C.1 AI寻找你身边的外星生物&lt;/h3&gt;
+
+&lt;h4 id=&quot;建立外星人图鉴让我们看一下ai预测的外星人形象是怎样的&quot;&gt;建立外星人图鉴，让我们看一下AI预测的外星人形象是怎样的&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;先看一下AI预测的外星生物矢量图：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/pets.webp&quot; alt=&quot;pets&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;a-训练素材&quot;&gt;a. 训练素材&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;从百度爬取“外星人”的图片，但因为外星人搜出来的图太杂乱。所以改变思路，用关键词“外星人 矢量”来进行搜索爬取。搜出来的外星人图片相对没那么杂乱。勉强可以用来训练。勉强是有1/5左右是白底，有1/5左右是PS中那种透明图的格子底图或水印的，有1/5是背景各种颜色的图，还有1/5是多个外星元素组成的图。大概数据见下图：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/pets2.webp&quot; alt=&quot;pets2&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;b-数据处理与增广&quot;&gt;b. 数据处理与增广&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;尝试过用midars模型或CV来提取单个外星生物，但效果都不是很好。所以，最终只使用水平翻转，增加了一倍的数量。尽管可以爬取来增加这个数量，但越到后面，爬取的图片质量越差。所以还是通过水平翻转来处理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;c-模型&quot;&gt;c. 模型&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;训练文件：见项目中 Train压缩包下 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TrainAlienPet.ipynb&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;模型文件：见项目中 Train压缩包下 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;generator0725.params&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;搜索了一下GAN的模型，结合可训练性与生成效果，选择了LSGAN。基于项目aistudio上“独楼望天涯”大佬的项目 &lt;a href=&quot;https://aistudio.baidu.com/aistudio/projectdetail/1936908&quot;&gt;https://aistudio.baidu.com/aistudio/projectdetail/1936908&lt;/a&gt;进行修改。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;在其基础上，每个epoch执行更多的Generation，以及修改了超参数（ 偶尔判别器loss高时，会有些完全不像的图）。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;训练过程：&lt;strong&gt;Epoch 0 ~ Epoch 999&lt;/strong&gt; 的LOSS及效果见下面动图：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/loss.webp&quot; alt=&quot;loss&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;具体训练项目地址见：&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://aistudio.baidu.com/aistudio/projectdetail/2210138&quot;&gt;Paddle2.0-通过LSGAN让我们看看AI预测的外星人长什么样子&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;不足：&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;大概在200epochs就已经差不多，再训练到1000epochs反而效果还下降了。loss方面，判别器可以达到0.02，但生成器只能到0.8。这方面还可以优化&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;最终会有不少彩色的杂点&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;生成的外星生物矢量图有些还保留训练图的方格背景之类的。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;生成的外星生物可能有部分过拟合，为有些很向原来的。&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;d-后处理&quot;&gt;d. 后处理&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;在叠加到现实图像中做AR效果时，使用cv处理优化这部分（具体见3-d中的描述）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;为外星生物配上背景介绍，定义他们出现的位置，建立外星生物图鉴&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;生物图鉴：AI生成的外星生物&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/tujian.webp&quot; alt=&quot;tujian&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;c2-识别现场环境cityscapesmodulepy&quot;&gt;C.2 识别现场环境——CityscapesModule.py&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-模型&quot;&gt;a. 模型&lt;/h4&gt;
+
+&lt;p&gt;PaddleSeg 中基于cityscapes数据集的SOTA模型&lt;/p&gt;
+
+&lt;p&gt;PaddleSeg训练了一个在cityscapes数据集上SOTA的模型。却很低调，只是放在contrib中，仅有个英文的介绍。里面的介绍还主要针对训练的，如果只是想要体验SOTA的cityscapes的效果是怎样的却很麻烦。本项目中化简了相关的代码，一行代码体验cityscapes分割。效果真的对得起SOTA的！&lt;/p&gt;
+
+&lt;h4 id=&quot;b-相关文件&quot;&gt;b. 相关文件&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;目录结构（单独使用本模块，只需修改&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CityscapesModule.py&lt;/code&gt;中的 im_path ）：&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+├── CityscapesModule.py
+└── PetModel
+    ├── modelCityscape.pdparams
+    ├── pretrainedCityscape.pdparams
+    └──mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pretrainedCityscape.pdparams&lt;/code&gt;下载地址：&lt;a href=&quot;https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams&quot;&gt;https://bj.bcebos.com/paddleseg/dygraph/cityscapes/ocrnet_hrnetw48_mapillary/pretrained.pdparams&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;modelCityscape.pdparams&lt;/code&gt;下载地址：&lt;a href=&quot;https://bj.bcebos.com/paddleseg/dygraph/cityscapes/mscale_ocr_hrnetw48_cityscapes_autolabel_mapillary/model.pdparams&quot;&gt;https://bj.bcebos.com/paddleseg/dygraph/cityscapes/mscale_ocr_hrnetw48_cityscapes_autolabel_mapillary/model.pdparams&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml&lt;/code&gt; 为PaddleSeg模型的yml文件&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;c-功能作用&quot;&gt;c. 功能/作用&lt;/h4&gt;
+
+&lt;p&gt;让AI能感知环境里有哪几样物品，同时可以定位到其在图片中的具体位置。具体识别的物品如下：&lt;/p&gt;
+
+&lt;p&gt;(&lt;strong&gt;PS:注意真实返回的ID是从0开始的，所以是trainId-1&lt;/strong&gt;，如sky实际返回的id是10 not 11）：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/sheet.webp&quot; alt=&quot;sheet&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;d-使用&quot;&gt;d. 使用&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;运行&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CityscapesModule.py&lt;/code&gt;脚本,设置待处理图片的路径，将返回大小于原图片大小一样的二维数组pred，其取值是从0~18。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;可以拿这个二维数组作为mask，例如用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;np.where(mask == index, 1, 0)&lt;/code&gt;来截取自己感兴趣的区域，index取值为上表中&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;实际返回ID&lt;/code&gt; ,也即 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trainID -1&lt;/code&gt;。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CityscapesModule.py&lt;/code&gt;中把&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pred ×10&lt;/code&gt;后保存成图片，见右下图（图片像素的灰度值从0~180）。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/cityscapes.webp&quot; alt=&quot;cityscapes&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c3-寻找隐藏在环境中的外星生物外星宠物alienpetmodulepy&quot;&gt;C.3 寻找隐藏在环境中的外星生物（外星宠物）——alienPetModule.py&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/pets3.webp&quot; alt=&quot;pets3&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;a-准备&quot;&gt;a. 准备&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;配合LSGAN生成的外星生物的形象，为起配置喜好，所在环境等，写入到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConfigPet.py&lt;/code&gt;中。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConfigPet.py&lt;/code&gt;中每个dict就是一种外星生物，该外星生物的id就是那个dict的key。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConfigPet.py&lt;/code&gt;中的areaIndex对应的就是cityScapes返回的物体ID，例如，areaIndex=10，则代表此生物是出现在天空中。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;b-作用&quot;&gt;b. 作用&lt;/h4&gt;
+
+&lt;p&gt;实现对应位置的叠加AR效果。如：天空中出现飞在天上的外星生物，树丛中会出现喜欢在树上的草食性外星生物。&lt;/p&gt;
+
+&lt;h4 id=&quot;c-步骤&quot;&gt;c. 步骤&lt;/h4&gt;
+
+&lt;h5 id=&quot;c1-准备&quot;&gt;c.1. 准备&lt;/h5&gt;
+
+&lt;p&gt;基于LSGAN生成的外星生物矢量图。配置其参数，如：名字、大小、常出现的位置，习性描述、是否需要遮罩等。&lt;/p&gt;
+
+&lt;h5 id=&quot;c2-选择&quot;&gt;c.2. 选择&lt;/h5&gt;
+
+&lt;p&gt;先判断alienIndex是0（随机生成），还是-1（不生成），或者是&amp;gt;0（生成id等于alienIndex的外星生物）。&lt;/p&gt;
+
+&lt;h5 id=&quot;c3-定位&quot;&gt;c.3. 定位&lt;/h5&gt;
+
+&lt;p&gt;基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现外星生物，及其出现位置。具体见关键技术点说明。&lt;/p&gt;
+
+&lt;h5 id=&quot;c4-合成&quot;&gt;c.4. 合成&lt;/h5&gt;
+
+&lt;p&gt;根据外星生物的特性使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.seamleClone&lt;/code&gt;，参数选用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIXED_CLONE&lt;/code&gt;或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NORMAL_CLONE&lt;/code&gt;。具体见关键技术点说明。&lt;/p&gt;
+
+&lt;h4 id=&quot;d-关键技术点&quot;&gt;d. 关键技术点&lt;/h4&gt;
+
+&lt;h5 id=&quot;d1-cv2seamlessclone三种图像合成效果&quot;&gt;d.1 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.seamlessClone&lt;/code&gt;三种图像合成效果&lt;/h5&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 会把src图的边缘进行模糊化，同时整个src图的色彩融合到dst中-&amp;gt;需要src图较清晰，dst背景较简单，可以接受src图周边边缘模糊的场景
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seamlessClone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src_mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NORMAL_CLONE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 基于透明度的融合，src图中白色的区域会显得透明度高，看起来叠加的颜色比较透-&amp;gt;适合dst背景较复杂，但对src图清晰度要求不高，src图背景是白色的场景
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seamlessClone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src_mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MIXED_CLONE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 会把src图变成灰度图合成到dst中-&amp;gt;暂时看不到什么好用途
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seamlessClone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dst&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;src_mask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MONOCHROME_TRANSFER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;借用别人的图，懒得生成了，左中右分别是：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NORMAL_CLONE&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIXED_CLONE&lt;/code&gt;，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONOCHROME_TRANSFER&lt;/code&gt;：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;简单背景：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/simple-clone.webp&quot; alt=&quot;simple-clone&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;复杂背景：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/complex-clone.webp&quot; alt=&quot;complex-clone&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;效果好坏于背景图dst及前景图src都有关系&lt;/p&gt;
+
+&lt;h5 id=&quot;d2-结合mask的优化版seamlesclone图像合成效果代码见alienpetmodulepy中的maskofwhitebgroiareacheck&quot;&gt;d.2 结合mask的优化版seamlesClone图像合成效果——代码见alienPetModule.py中的maskOfWhiteBG()，roiAreaCheck()&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;把src的外星生物图转成HSV格式，通过V通道，V大于200得到二值化的mask。HSV的V分量可以当作是亮度，在本次LSGAN生成的外星人中基本都是白色底的，可以抠处白色底&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;二值化的图进行开运算。去除LSGAN中生成的一些彩色噪声点，得到外星生物的mask，宁愿漏也不要去多了。因为合成时有个渐变，自然就把杂点淡化了。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/binary.webp&quot; alt=&quot;binary&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;把2中的二值化图进行边缘裁切，使mask图的四个边都有白色区域接触。这可能是seamlessClone的一个bug，若白色区域不接触图像边缘，&lt;strong&gt;其合成时的位置是按白色区域的中心点位置，不是mask图像的中心点位置&lt;/strong&gt;，切记！&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;根据裁切后的mask，重新计算中心点左边center=(x,y)。seamlessClone的center参数是src的中心点在dst图中的位置。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;d3-结合cityscapes分割的ar定位代码见alienpetmodulepy中的erode2lefttoplefttop2center&quot;&gt;d.3 结合cityScapes分割的AR定位——代码见alienPetModule.py中的erode2LeftTop（），leftTop2Center()&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;利用cityScapes返回的pred图中，获取画面中某个物品的mask。利用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;np.where(pred==areaIndex, 1, 0)&lt;/code&gt;生成二值化mask。&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;根据用户图片dst的大小，及外星宠物的scaleRatio参数，调整外星宠物图片的大小。大小设置为dst图像长边scaleRatio，再有一个（0.8~1）倍的随机&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;对二值化mask图4个边缘的值都设置0。相当于mask图边缘多了一个黑色的框，方便待会腐蚀时，可以从边缘也腐蚀。否则，贴着边缘值为1的点待会都不会倍腐蚀&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;以调整后的外星宠物图像的边长d，对二值化mask图像进行opencv的腐蚀操作。腐蚀后，值为1的点则为可选的外星宠物图像进行seamlessClone的center点。腐蚀相当于我们的卷积，当该点腐蚀后仍为1，则证明其腐蚀前周围值为1的点能组成一个d×d的形状&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/corrosion.webp&quot; alt=&quot;corrosion&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;若腐蚀后，mask图都为0，则缩小腐蚀的kernel为原来的0.6，再重复4的步骤。步骤4完成后没能找到mask中为1的点则证明，没有足够位置完全把外星宠物图像放进去，我们缩小要求，要求某区域只要有60%的外星宠物的大小则继续融合进去&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ol&gt;
+      &lt;li&gt;若4或5步骤后，mask中有值为1的点，则满足条件,可进行图像合成&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;d4-前后关系&quot;&gt;d.4 前后关系&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;有外星人又则怎能少了外星飞碟呢。外星飞船要逼真需要又遮挡关系，我们可以利用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cityscapesModule&lt;/code&gt;识别出的天空区域。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;一句代码实现遮挡：&lt;/p&gt;
+
+    &lt;p&gt;【伪代码】 np.where(mask=天空的index, 已叠加飞船的图，原图）&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/sky.webp&quot; alt=&quot;sky&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c4-外星人显形alienheadmodulepy&quot;&gt;C.4 外星人显形——alienHeadModule.py&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-模型-1&quot;&gt;a. 模型&lt;/h4&gt;
+
+&lt;p&gt;Paddlehub landmark模型&lt;/p&gt;
+
+&lt;p&gt;landmark的68个人脸关键点模型具体介绍请见官方介绍：&lt;a href=&quot;https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint&quot;&gt;https://gitee.com/PaddlePaddle/PaddleHub/tree/release/v2.1/modules/image/keypoint&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;b-作用-1&quot;&gt;b. 作用&lt;/h4&gt;
+
+&lt;p&gt;实现外星人换脸&lt;/p&gt;
+
+&lt;h4 id=&quot;c-步骤-1&quot;&gt;c. 步骤&lt;/h4&gt;
+
+&lt;h5 id=&quot;c1-准备-1&quot;&gt;c.1. 准备&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;找到一张外星人正面的照片与侧面的照片，扣出其形象保存图片。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们需要手动用labelme的keypoint为其标上68个关键点，大概就好，不用太精确。landmark数据按labelme格式保存到json中。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;配置外星人的人脸参数到&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConfigHead.py&lt;/code&gt;中。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/alien1.webp&quot; alt=&quot;alien1&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;c2-对齐&quot;&gt;c.2. 对齐&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;对用户发来的图片，利用PaddleHub的landmark模型获取图片中的人脸特征点。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;正脸使用正脸的外星人照片的，侧脸用侧脸的预处理照片。若角度太偏则不进行处理。然后，使用landmark中脸颊的特征点求中点进行人脸图像位置上的对齐。并根据用户图片的人脸对外星人人脸进行大小调整&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;c3-融合粘贴&quot;&gt;c.3. 融合粘贴&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;截取外星人人脸，生成一个上到下的渐透明的遮罩图。用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.seamlessCloned&lt;/code&gt;的NORMAL_CLONE复制到原人脸位置，但因为seamlessClone没法调参数的，外星人形象融在背景里面，不太明显不清晰。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;截取外星人人脸及颈部及上半身，生成一个上到下的渐透明的遮罩图。用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.addWeight&lt;/code&gt;把外星人脸与1中所述的人脸进行透明度融合。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/alien2.webp&quot; alt=&quot;alien2&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;d-关键技术点-1&quot;&gt;d. 关键技术点&lt;/h4&gt;
+
+&lt;h5 id=&quot;d1-问题分析&quot;&gt;d.1 问题分析&lt;/h5&gt;
+
+&lt;p&gt;直接把外星人脸贴到用户图上边缘会很硬，如上图中的左图。&lt;/p&gt;
+
+&lt;h5 id=&quot;d2-单方向渐变遮罩&quot;&gt;d.2 单方向渐变遮罩&lt;/h5&gt;
+
+&lt;p&gt;使用从上到下的遮罩，可以有效渐变过度到身体。上到下的渐变mask生成见&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CVTools.py&lt;/code&gt;中的gradientMask()。只用上到下的渐变，是因为外星人头会比正常人头大，本身过渡要求不高，所以上，左，右方向的融合过渡，依靠seamlessClone则可较好处理。剩下 下 这个方向是连接颈部或身体的需要渐变遮罩过渡。（见下图）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/alien1.webp&quot; alt=&quot;alien3&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;d3-双重图片叠加融合&quot;&gt;d.3 双重图片叠加融合&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;只是使用seamlessClone融合，会因为seamlessClone算法影响，把贴上去的外星人图颜色变得较多，算法只为让其融合到附近环境。原图是这样的：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/alien4.webp&quot; alt=&quot;alien4&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.seamlessClone&lt;/code&gt;没有参数调节，使得整个外星人头的颜色都变了。见下图左。   双重图片叠加融合，效果见下图右。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/alien5.webp&quot; alt=&quot;alien5&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;双重图片叠加融合步骤：（具体代码为项目中：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alienHeadModule.py&lt;/code&gt;)&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;生成head的渐变mask。使用d2所述的方法生成头部的渐变遮罩。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;hard paste head。使用直接粘贴替换的方式，把外星人的head粘贴到用户的图的适当位置。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;生成Body的渐变mask。把外星人头及颈部或身体上半部 对齐head的位置，使用d2所述的方法生成mask。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;seamlessClone Body。使用3所述的mask图，把外星人身体上半部seamlessClone到用户的图中，需要保证粘贴后头的位置是跟步骤2一样的。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;ol&gt;
+          &lt;li&gt;合成。使用&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.addWeight&lt;/code&gt;实现透明度叠加步骤2与步骤4的图。 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cv2.addWeighted(src1, alpha, src2, beta, gamma)&lt;/code&gt;，根据不同外星人的皮肤深浅调节alpha，beta。最终效果见上图。&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c5-寻找生长在地球的外星植物vegetatemodulepy&quot;&gt;C.5 寻找生长在地球的外星植物——vegetateModule.py&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/vegetate1.webp&quot; alt=&quot;vegetate1&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;a-准备-1&quot;&gt;a. 准备&lt;/h4&gt;
+
+&lt;p&gt;找一些外星植物的图片，实现非深度学习的基于&lt;strong&gt;图像技术&lt;/strong&gt;的颜色纹理迁移。也可以是一些想要的风格的图，如下图中的任意一种
+&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/vegetate2.webp&quot; alt=&quot;vegetate2&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;b-作用-2&quot;&gt;b. 作用&lt;/h4&gt;
+
+&lt;p&gt;把环境中的植物变换成外星风格的植物&lt;/p&gt;
+
+&lt;h4 id=&quot;c-步骤-2&quot;&gt;c. 步骤&lt;/h4&gt;
+
+&lt;h5 id=&quot;c1-准备-2&quot;&gt;c.1. 准备&lt;/h5&gt;
+
+&lt;p&gt;基于这些外星植物，在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ConfigVegetae.py&lt;/code&gt;中配置其参数，如：名字、常出现的位置，习性描述等&lt;/p&gt;
+
+&lt;h5 id=&quot;c2-选择-1&quot;&gt;c.2. 选择&lt;/h5&gt;
+
+&lt;p&gt;先判断vegetateIndex是0（随机生成），还是-1（不生成），或者是&amp;gt;0（生成id等于vegetateIndex是0的外星植物）。&lt;/p&gt;
+
+&lt;h5 id=&quot;c3-定位-1&quot;&gt;c.3. 定位&lt;/h5&gt;
+
+&lt;p&gt;基于分割模型得到的mask区域，按照外星生物可存在的位置判断是否出现该外星植物，及其出现位置。&lt;/p&gt;
+
+&lt;h5 id=&quot;c4-合成-1&quot;&gt;c.4. 合成&lt;/h5&gt;
+
+&lt;p&gt;根据外星植物的特性使用yuv颜色通道合成。具体见关键技术点说明。&lt;/p&gt;
+
+&lt;h4 id=&quot;d-关键技术点-2&quot;&gt;d. 关键技术点&lt;/h4&gt;
+
+&lt;h5 id=&quot;d1-yuv颜色区间&quot;&gt;d.1 YUV颜色区间&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;比较熟悉CV的同志们可以忽略此节&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们使用CV的方法进行处理时，通常不会再RGB颜色空间处理，而是转到HLS/HSV 也有 YUV颜色空间进行处理。这样作的好处是 其中的H 通道在一定程度上可以表示其颜色。通过这样来选择特定的颜色，S代表饱和度，V代表亮度。而YUV中 Y是亮度，U,V分别是 蓝 红 通道。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;YUV具体介绍可见：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/95952096&quot;&gt;https://zhuanlan.zhihu.com/p/95952096&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;d2-yuv颜色融合&quot;&gt;d.2 YUV颜色融合&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;我们也可以通过Y通道融合亮度，保留外星的U,V通道，即保留其颜色。当两个图片融合时，通过调节融合的Y通道的权重，控制合成出来的颜色亮度。&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# 把图片style，content转到yuv空间
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yuv&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cvtColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;COLOR_BGR2YUV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yuv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;yuv2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cvtColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;COLOR_BGR2YUV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yuv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  
+&lt;span class=&quot;c1&quot;&gt;# 根据ratio这个比例来合成 style 与 content两张图
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hy&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'uint8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# hy = np.clip(hy, 0, 255)
+&lt;/span&gt;  
+&lt;span class=&quot;c1&quot;&gt;# 两张图进行合成
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dstack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cvtColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cv2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;COLOR_YUV2BGR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c6-寻找被外星人隐藏起来的外星建筑sandmodulepy&quot;&gt;C.6 寻找被外星人隐藏起来的外星建筑——sandModule.py&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/sand1.webp&quot; alt=&quot;sand1&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;a-准备-2&quot;&gt;a. 准备&lt;/h4&gt;
+
+&lt;p&gt;使用Msgnet迁移训练的沙画模型，实现基于&lt;strong&gt;深度学习&lt;/strong&gt;的风格迁移。 大家可以对比一下5中的外星植物的效果，那是基于CV技术的迁移&lt;/p&gt;
+
+&lt;h4 id=&quot;b-作用-3&quot;&gt;b. 作用&lt;/h4&gt;
+
+&lt;p&gt;把环境中的建筑变成像流沙组合起来的建筑&lt;/p&gt;
+
+&lt;h4 id=&quot;c-步骤-3&quot;&gt;c. 步骤&lt;/h4&gt;
+
+&lt;h5 id=&quot;c1-定位&quot;&gt;c.1. 定位&lt;/h5&gt;
+
+&lt;p&gt;基于分割模型得到的mask区域，定位areaIndex==2,即building的区域。&lt;/p&gt;
+
+&lt;h5 id=&quot;c2-图像迁移&quot;&gt;c.2. 图像迁移&lt;/h5&gt;
+
+&lt;p&gt;把建筑转成灰度图，然后用msgnet迁移成流沙的风格。&lt;/p&gt;
+
+&lt;h3 id=&quot;c7-使用imggeneratemodule-建立alien-server或直接调用&quot;&gt;C.7 使用ImgGenerateModule 建立Alien Server或直接调用&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-直接调用函数&quot;&gt;a. 直接调用函数&lt;/h4&gt;
+
+&lt;p&gt;ImgGenerateModule可以单独使用或&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.py&lt;/code&gt;也可单独建立flask的图像生成服务供其他用途使用&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;初始化函数定义各个模型文件夹及图片素材的位置&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;imgGenerator&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ImgGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ymlPathSeg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PetModel/mscale_ocr_cityscapes_autolabel_mapillary_ms_val.yml'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#cityscapes分割模型的yml
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;modelPathSeg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PetModel/modelCityscape.pdparams'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#cityscapes分割模型文件
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;modelPathSand&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'msgnet'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#沙画模型文件夹
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;picPathHead&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'HeadPic/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#外星人头素材
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;picPathPet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PetPic/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#外星生物素材
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;picPathVeg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'VegPic'&lt;/span&gt;    &lt;span class=&quot;c1&quot;&gt;#外星植物及外星建筑素材
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;调用函数生成&lt;/p&gt;
+
+    &lt;p&gt;输入是图片路径：&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;des&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imgGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;dstPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;alienHeadIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;vegetateIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;environmentIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;alienPetIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;输入直接是图片：&lt;/p&gt;
+
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;des&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;imgGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;runImg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;alienHeadIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;vegetateIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;environmentIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;alienPetIndex&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;参数说明&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;参数名&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;必选&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;类型&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;img/dstPath&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;是&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;string&lt;/td&gt;
+          &lt;td&gt;待处理图片或待处理图片的地址&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;alienHeadIndex&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;否&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
+          &lt;td&gt;是否进行换外星人头，-1为不处理，0为随机，&amp;gt;0为指定index为该值的外星人&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;vegetateIndex&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;否&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
+          &lt;td&gt;是否添加外星植物，-1为不处理，0为随机，&amp;gt;0为指定index为该值的外星植物&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;environmentIndex&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;否&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
+          &lt;td&gt;是否生成外星建筑外墙，-1为不处理，&amp;gt;0为生成&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;alienPetIndex&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;否&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;int&lt;/td&gt;
+          &lt;td&gt;是否进行添加外星生物，-1为不处理，0为随机，&amp;gt;0为指定index为该值的外星生物&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;返回说明&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;参数名&lt;/th&gt;
+          &lt;th style=&quot;text-align: left&quot;&gt;类型&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;result_code&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;dict&lt;/td&gt;
+          &lt;td&gt;{ 返回结果代号 ：返回结果描述}，result_code参数具体见代码中说明，200为正常生成&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;img&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;numpy array&lt;/td&gt;
+          &lt;td&gt;生成的图片或原图片(没有适合的位置生成时返回原图片)&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;dis&lt;/td&gt;
+          &lt;td style=&quot;text-align: left&quot;&gt;dict&lt;/td&gt;
+          &lt;td&gt;包含生成外星人/生成外星植物/生成外星建筑/生成外星宠物的参数的字典. 没有进行处理则为空字典&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;b-建server访问图像生成接口-本项目中使用的方式&quot;&gt;b. 建server，访问图像生成接口 (本项目中使用的方式）&lt;/h4&gt;
+
+&lt;p&gt;不确定什么原因，以前Wechaty都可以在AI Studio的脚本任务跑，现在好像不可以了，从AI Studio脚本任务无法访问外网的端口了，可以ping通外网。所以，需要另外找自己的主机作深度学习这部分的图片推理生成，因此直接把上述功能再弄到flask中，弄了个接口。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;接口代码见：项目中的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app.py&lt;/code&gt;脚本&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;接口文档说明见showdoc：&lt;a href=&quot;https://www.showdoc.com.cn/1525661816374166/7370335053618085&quot;&gt;https://www.showdoc.com.cn/1525661816374166/7370335053618085&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;并发问题：flask接口默认允许并发，即可能很短时间内或同一时间调用里面的函数的，但鉴于我们的运算都是GPU的，不支持并发调用。所以，使用了gevent来设置阻塞的服务。即会一个处理完再调用处理下一个，中间还没处理的会等待。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c8-识别图像的拍摄位置&quot;&gt;C.8 识别图像的拍摄位置&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-前提条件需同时满足下面条件&quot;&gt;a. 前提条件（需同时满足下面条件）&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;用户是在微信中，用&lt;strong&gt;原图&lt;/strong&gt;发送照片给我们&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;照片拍照时，其拍照设置中打开了&lt;strong&gt;保存地理位置信息&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;b-背景情况介绍&quot;&gt;b. 背景情况介绍&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;若用户满足上述2条件，则保存的照片里将含有exif信息。该EXIF信息，可在Windows中图片的属性中看到，GPS，拍照日期等信息：&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/location1.webp&quot; alt=&quot;location1&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;EXIF的详细介绍可见，这里不详细叙述了:&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.360doc.com/content/18/0303/07/7793103_733844932.shtml&quot;&gt;http://www.360doc.com/content/18/0303/07/7793103_733844932.shtml&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;c-获取经纬度exifmodulepy&quot;&gt;c. 获取经纬度——exifModule.py&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;python中有pip库可以直接获取照片的exif信息， 具体代码可见项目工程中的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exifModule.py&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;本脚本中提取了最关键的经度与纬度信息，还有拍照日期可供调用&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;d-获取具体位置geomodulepy&quot;&gt;d. 获取具体位置——geoModule.py&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;具体代码可见项目工程中的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geoModule.py&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;步骤：把获得的经纬度信息去请求开放的地图api，获取具体地址.这个方法的名称为：逆地址编码&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;横向比较了： 百度，腾讯，高德地图，发现高德给出的个人免费调用量有 3W/日，其他两家只有几k。最终选用了高德的api&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;高德api获取地址步骤（非常简单）：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;序号&lt;/th&gt;
+          &lt;th&gt;高德流程&lt;/th&gt;
+          &lt;th&gt;备注&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;注册&lt;/td&gt;
+          &lt;td&gt;需要支付宝扫码实名&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;新建应用&lt;/td&gt;
+          &lt;td&gt;按默认点确定即可&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;复制那个应用的key进行调用&lt;/td&gt;
+          &lt;td&gt;调用代码见&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;geoModule.py&lt;/code&gt;，请使用自己的gaode_key测试&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;详细图文描述可见：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/371682461&quot;&gt;https://zhuanlan.zhihu.com/p/371682461&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;d-上手及部署指南&quot;&gt;D. 上手及部署指南&lt;/h2&gt;
+
+&lt;h3 id=&quot;d1-配置要求&quot;&gt;D.1 配置要求&lt;/h3&gt;
+
+&lt;p&gt;图像部分，因为用了PaddleSeg需要一台6G显存以上的主机，4G显存的没测试过，可以尝试调小 ImgGeneratorModule 中的 inputSize, 在DL处理前先缩小图片。&lt;/p&gt;
+
+&lt;h3 id=&quot;d2-部署方案&quot;&gt;D.2 部署方案&lt;/h3&gt;
+
+&lt;p&gt;建议选择方案一&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;方案一：一台显存6G，内存16G电脑（部署整个项目）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;方案二：一台普通云端服务器（1核2G之类的）+ 一台有外网IP的显存6G，内存16G电脑(部署图像部分：ImgGenerateModule)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;方案三：一台有GPU的云端服务器&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;d3-模型下载&quot;&gt;D.3 模型下载&lt;/h3&gt;
+
+&lt;p&gt;需下载以下模型：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;简化后的PadlleSeg的cityscapes的SOTA模型（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CityscapesModule.py&lt;/code&gt;需要）&lt;/p&gt;
+
+    &lt;p&gt;AI Studio数据页：&lt;a href=&quot;https://aistudio.baidu.com/aistudio/datasetdetail/102892&quot;&gt;https://aistudio.baidu.com/aistudio/datasetdetail/102892&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;流沙效果/沙画效果模型（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sandModule.py&lt;/code&gt;需要）&lt;/p&gt;
+
+    &lt;p&gt;AI Studio数据页：&lt;a href=&quot;https://aistudio.baidu.com/aistudio/datasetdetail/102698&quot;&gt;https://aistudio.baidu.com/aistudio/datasetdetail/102698&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PaddleSeg（&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CityscapesModule.py&lt;/code&gt;需要）&lt;/p&gt;
+
+    &lt;p&gt;AI Studio数据页：&lt;a href=&quot;https://aistudio.baidu.com/aistudio/datasetdetail/102136&quot;&gt;https://aistudio.baidu.com/aistudio/datasetdetail/102136&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;或直接去GitHub：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone https://github.com/PaddlePaddle/PaddleSeg&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;或者去Gitee：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone https://gitee.com/PaddlePaddle/PaddleSeg&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;生成外星人矢量图模型（非必需，若要自己新增生成外星生物才需要）&lt;/p&gt;
+
+    &lt;p&gt;AI Studio数据页：&lt;a href=&quot;https://aistudio.baidu.com/aistudio/datasetdetail/103316&quot;&gt;https://aistudio.baidu.com/aistudio/datasetdetail/103316&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;d4-部署过程&quot;&gt;D.4 部署过程&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;申请Wechaty Token &lt;a href=&quot;https://wechaty.js.org&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg&quot; alt=&quot;Powered by Wechaty&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;https://github.com/wechaty/python-wechaty&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Wechaty-Python-blue&quot; alt=&quot;Wechaty in Python&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;具体请访问Wechaty官网: &lt;a href=&quot;https://wechaty.js.org/&quot;&gt;https://wechaty.js.org/&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;快速上手&lt;/p&gt;
+
+    &lt;p&gt;请参考&lt;a href=&quot;https://aistudio.baidu.com/aistudio/personalcenter/thirdview/638343&quot;&gt;@Lovely-Pig&lt;/a&gt;的文章: &lt;a href=&quot;https://aistudio.baidu.com/aistudio/projectdetail/1836012&quot;&gt;教你用AI Studio+Wechaty+阿里云白嫖一个智能微信机器人&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;云服务器&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;本项目用到了阿里云的云服务器ECS，链接: &lt;a href=&quot;https://www.aliyun.com/product/ecs&quot;&gt;云服务器ECS&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;购买实例后登录&lt;a href=&quot;https://ecs.console.aliyun.com&quot;&gt;控制台&lt;/a&gt;，实例名称和主机名可以自行更改，记住&lt;strong&gt;公网IP&lt;/strong&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;有任何不明白的请访问: &lt;a href=&quot;https://help.aliyun.com/product/25365.html&quot;&gt;云服务器ECS官方文档&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;云数据库&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;本项目用到了阿里云的云数据库RDS MySQL版，链接: &lt;a href=&quot;https://www.aliyun.com/product/rds&quot;&gt;云数据库RDS MySQL版&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;购买实例后登录&lt;a href=&quot;https://rds.console.aliyun.com&quot;&gt;控制台&lt;/a&gt;，创建一个数据库，名为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super-interstellar-terminal&lt;/code&gt; .&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;创建一个普通账号，授权数据库填写&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super-interstellar-terminal&lt;/code&gt;，权限为读写（DDL+DML），记住&lt;strong&gt;用户名&lt;/strong&gt;和&lt;strong&gt;密码&lt;/strong&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;在左侧&lt;strong&gt;数据库连接&lt;/strong&gt;处找到外网地址，小本本记下来&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;设置白名单，将云服务器实例的&lt;strong&gt;公网IP&lt;/strong&gt;加入白名单&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;有任何不明白的请访问: &lt;a href=&quot;https://help.aliyun.com/product/26090.html&quot;&gt;云数据库RDS官方文档&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;云存储&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;本项目用到了阿里云的对象存储OSS，链接: &lt;a href=&quot;https://www.aliyun.com/product/oss&quot;&gt;对象存储OSS&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;开通后登录&lt;a href=&quot;https://oss.console.aliyun.com&quot;&gt;控制台&lt;/a&gt;，创建一个Bucket，名为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super-interstellar-terminal&lt;/code&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;登录&lt;a href=&quot;https://ram.console.aliyun.com&quot;&gt;RAM控制台&lt;/a&gt;，创建一个用户，访问方式选择&lt;strong&gt;编程访问&lt;/strong&gt;，记住&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AccessKey ID&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AccessKey Secret&lt;/code&gt;.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;有任何不明白的请访问: &lt;a href=&quot;https://help.aliyun.com/product/31815.html&quot;&gt;云存储OSS官方文档&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;开启数据库server&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 以任何一种你喜欢❤的方式远程登陆到阿里云的云服务器&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 克隆本代码仓库&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/
+git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
+
+&lt;span class=&quot;c&quot;&gt;# 安装MySQL客户端&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;mysql-client-core-8.0
+
+&lt;span class=&quot;c&quot;&gt;# 开启数据库server&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/SuperInterstellarTerminal/bot/
+python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;span class=&quot;nb&quot;&gt;nohup &lt;/span&gt;python3 server/database.py &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;/dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;开启图像处理server&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 远程登陆到一台很牛逼的服务器（不是阿里云的云服务器）&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 克隆本代码仓库&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/
+git clone https://github.com/kevinfu1717/SuperInterstellarTerminal.git
+
+&lt;span class=&quot;c&quot;&gt;# 开启图像处理server&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/SuperInterstellarTerminal/
+python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;span class=&quot;nb&quot;&gt;nohup &lt;/span&gt;python3 app.py &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;/dev/null 2&amp;gt;&amp;amp;1 &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;设置环境变量&lt;/p&gt;
+
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OSS_ENDPOINT&lt;/code&gt;的设置可参考: &lt;a href=&quot;https://help.aliyun.com/document_detail/31837.html?spm=a2c4g.11186623.6.611.554e6d13isyAAt&quot;&gt;访问域名（Endpoint）&lt;/a&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;WECHATY_PUPPET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;wechaty-puppet-service&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;WECHATY_PUPPET_SERVICE_TOKEN&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your wechaty token&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# wechaty的token&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DB_USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your database user name&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 云数据库账号的用户名&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DB_PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your database password&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 云数据库账号的密码&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DB_DATABASE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your database name&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 云数据库的数据库名，填写为super-interstellar-terminal&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DB_SERVER_HOST&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your database server host&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 开启数据库server的服务器地址，一般是云服务器的公网IP&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ACCESS_KEY_ID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your AccessKey ID&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# RAM用户的AccessKey ID&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ACCESS_KEY_SECRET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your AccessKey Secret&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# RAM用户的AccessKey Secret&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;OSS_BUCKET_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your oss bucket name&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 云存储的Bucket，填写为super-interstellar-terminal&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;OSS_ENDPOINT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your oss endpoint&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 云存储的访问域名&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;IMG_SERVER_HOST&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your img server host&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 开启图像处理server的服务器地址&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;DEVELOPERS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;your developer cipher&amp;gt;&quot;&lt;/span&gt;    &lt;span class=&quot;c&quot;&gt;# 给予开发者特权的暗号&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;运行bot&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ~/super-interstellar-terminal/bot/
+python3 &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements.txt
+&lt;span class=&quot;nb&quot;&gt;nohup &lt;/span&gt;python3 bot.py &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;e-总结&quot;&gt;E. 总结&lt;/h2&gt;
+
+&lt;h3 id=&quot;e1-展望&quot;&gt;E.1 展望&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-让心在宇宙漂流&quot;&gt;a. 让心在宇宙漂流&lt;/h4&gt;
+
+&lt;p&gt;此项目结合了轻社交的星际漂流瓶，让大家可以抒发一下想对着太空说的话。也可以惊喜地看到别人写的漂流瓶。&lt;/p&gt;
+
+&lt;h4 id=&quot;b-来个更逼真的lbsar游戏&quot;&gt;b. 来个更逼真的LBS+AR游戏&lt;/h4&gt;
+
+&lt;p&gt;后续希望可以从用户拍的图片获取到地点或经纬度，或者用户发送定位来，从而实现更准确的LBS定位。叠加上AI图像能力，说不定能比PokemonGo更棒噢！&lt;/p&gt;
+
+&lt;p&gt;起码&lt;strong&gt;普通伊布是不应该在水面出现的噢 @任天堂&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-super-interstellar-terminal/last1.webp&quot; alt=&quot;last1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;看到这个项目，要不要也一起合作来把AI融到游戏里啊 @任天堂 （JUST JOKING. DON’T TAKE IT SERIOUSELY.)&lt;/p&gt;
+
+&lt;h4 id=&quot;c-来更多脑洞一起创作玩法与剧本吧&quot;&gt;c. 来更多脑洞一起创作玩法与剧本吧！&lt;/h4&gt;
+
+&lt;p&gt;希望更多有兴趣的脑洞，一起想想我们可以怎么玩，让我们玩得更high一点吧！&lt;/p&gt;
+
+&lt;h3 id=&quot;e2-期盼&quot;&gt;E.2 期盼&lt;/h3&gt;
+
+&lt;p&gt;希望更多小伙伴能贡献一下自己的脑洞，基于此项目，觉得还可以优化的游戏方式或游戏剧本。希望留言或评论。感谢！&lt;/p&gt;
+
+&lt;p&gt;希望小伙伴们觉得此项目不错的&lt;strong&gt;点个赞（Star）和Fork&lt;/strong&gt;。能从头看到这里的很不容易了。非常感谢！！&lt;/p&gt;
+
+&lt;h3 id=&quot;e3-reference参考内容&quot;&gt;E.3 Reference/参考内容&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://account.aliyun.com&quot;&gt;阿里云官网&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://wechaty.js.org&quot;&gt;Wechaty官网&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/wechaty/python-wechaty&quot;&gt;python-wechaty&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/wechaty/python-wechaty-getting-started&quot;&gt;python-wechaty-getting-started&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://aistudio.baidu.com/aistudio/projectdetail/1836012&quot;&gt;教你用AI Studio+Wechaty+阿里云白嫖一个智能微信机器人&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://https://aistudio.baidu.com/aistudio/projectdetail/1936908&quot;&gt;通过LSGAN以及WGAN-GP实现128*128大小的喀纳斯风景图片&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://https://aistudio.baidu.com/aistudio/projectdetail/2210138&quot;&gt;Paddle2.0-通过LSGAN让我们看看AI预测的外星人长什么样子&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;e4-致谢&quot;&gt;E.4 致谢&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;感谢百度爸爸的算力及技术支持&lt;/li&gt;
+  &lt;li&gt;感谢Wechaty与Mixlabs&lt;/li&gt;
+  &lt;li&gt;感谢Reference中列到的所有作者&lt;/li&gt;
+  &lt;li&gt;感谢其中用到的所有开源项目的作者及维护者&lt;/li&gt;
+  &lt;li&gt;感谢Teammate&lt;a href=&quot;https://github.com/Lovely-Pig&quot;&gt;@Lovely-Pig&lt;/a&gt;，感谢过程中所有提供鼓励与帮助的百度人员&lt;/li&gt;
+  &lt;li&gt;致敬为拓展人类的宇宙梦而奋斗的所有技术工作者 Respect！!!&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>kevinfu1717</name></author><category term="article" /><category term="blog" /><category term="ar" /><category term="game" /><category term="introduction" /><summary type="html">基于微信聊天的 结合增强现实技术（AR）+LBS(暂时基于图像） 的星际漂流瓶 的轻社交游戏。重新认识你身边的世界，或许我们早已与外星生命共同生活着。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-super-interstellar-terminal/title.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-super-interstellar-terminal/title.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">GSoD’21 Eighth Meeting</title><link href="https://wechaty.js.org/2021/08/15/gsod-2021-eighth-meeting/" rel="alternate" type="text/html" title="GSoD’21 Eighth Meeting" /><published>2021-08-15T00:00:00+00:00</published><updated>2021-08-15T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/15/gsod-2021-eighth-meeting</id><content type="html" xml:base="https://wechaty.js.org/2021/08/15/gsod-2021-eighth-meeting/">&lt;h2 id=&quot;google-season-of-docs21-eighth-meeting&quot;&gt;Google Season of Docs’21 Eighth meeting&lt;/h2&gt;
+
+&lt;h3 id=&quot;meeting-summary&quot;&gt;Meeting Summary&lt;/h3&gt;
+
+&lt;p&gt;It was the eighth meeting of the GSoD’21 participants. Firstly every participant gave one’s weekly summary and informed the community
+ about their plans for the upcoming week, volunteers and tech writers discussed while tech writers were giving their week summaries.
+  Later we discussed comments and questions of the participants, and they all were regarding getting reviews, feedback, &amp;amp; help, and
+   at last, we took a lovely group photo. In the end I would like to stress upon the need of faster reviewal and merging of the PRs,
+    after listening everyone at the meet.&lt;/p&gt;
+
+&lt;div style=&quot;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+&quot;&gt;
+  &lt;iframe src=&quot;https://www.youtube.com/embed/zLtLp5i0MD8&quot; allowfullscreen=&quot;&quot; webkitallowfullscreen=&quot;&quot; frameborder=&quot;0&quot; style=&quot;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    &quot;&gt;
+&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&quot;attendees&quot;&gt;Attendees&lt;/h3&gt;
+
+&lt;p&gt;Total 10 attendees attended the meeting. They are:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Rohitesh Jain, Volunteer (UTC + 5:30)&lt;/li&gt;
+  &lt;li&gt;Sajen Sarvajith, Reconstruct Landing page writer (UTC + 5:30)&lt;/li&gt;
+  &lt;li&gt;Abhishek Jaiswal, How-to-guide section writer (UTC + 05:30)&lt;/li&gt;
+  &lt;li&gt;Mukosa Joseph Mawa, Introductions and Explanations section writer (UTC +03:00)&lt;/li&gt;
+  &lt;li&gt;Rajiv Ranjan Singh, Improve the gRPC and OpenAPI ecosystem writer, rajivperfect007@gmail.com, (UTC+05:30)&lt;/li&gt;
+  &lt;li&gt;Shraddha, Improve References section writer (UTC + 5:30)&lt;/li&gt;
+  &lt;li&gt;Shwetal Soni, Create easy to learn tutorials for beginners users writer (UTC +05:30)&lt;/li&gt;
+  &lt;li&gt;Vasvi Sood, How to guides, contactvasvisood@gmail.com writer (UTC + 5:30)&lt;/li&gt;
+  &lt;li&gt;Chris Estepa,  Introduction and Explanations sections writer (UTC +08:00)&lt;/li&gt;
+  &lt;li&gt;Soumi Bardhan, Improve References section writer (UTC + 5:30)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: Meeting started on schedule and Simin, Souvik, and Arnab Saha weren’t able to make it up to the meeting.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-gsod-2021-eighth-meeting/gsod-eighth-meeting.webp&quot; alt=&quot;Google Season of Docs 2021: Wechaty GSoD'21 Group Photo&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;agendas&quot;&gt;Agendas&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8&quot;&gt;00:00&lt;/a&gt; 0. Introduction &amp;amp; Welcome&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=61&quot;&gt;01:01&lt;/a&gt; 1. Discussion with Tutorials team&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=271&quot;&gt;04:31&lt;/a&gt; 2. Discussion with Introduction and explanation team&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=472&quot;&gt;07:52&lt;/a&gt; 3. Discussion with Landing page team&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=625&quot;&gt;10:25&lt;/a&gt; 4. Discussion with References section team&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=677&quot;&gt;11:17&lt;/a&gt; 5. Discussion with gRPC team&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://youtu.be/zLtLp5i0MD8?t=737&quot;&gt;12:17&lt;/a&gt; 6. Questions/comments&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can learn more from our &lt;a href=&quot;https://docs.google.com/document/d/1fVCk8qRYc4RKGMf2UY5HOe07hEhPUOpGC34v88GEFJg/edit#heading=h.edr3nzd8l43b&quot;&gt;meeting notes&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;meeting-outcomes&quot;&gt;Meeting Outcomes&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The community got to know about the progress and plans of the members&lt;/li&gt;
+  &lt;li&gt;Community got to know the follow-up actions for the mentors and volunteers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;meeting-follow-ups&quot;&gt;Meeting Follow-ups&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Merge PRs in this &lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1056&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tutorials team is in stalemate position, as they await for these issues to be resolved, &lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1200&quot;&gt;#1200&lt;/a&gt;,
+&lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1199&quot;&gt;1199&lt;/a&gt;, &lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1193&quot;&gt;1193&lt;/a&gt;,
+&lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1176&quot;&gt;1176&lt;/a&gt;, &lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/issues/1119&quot;&gt;1119&lt;/a&gt;, and apart from this,
+they need answers to some questions in &lt;a href=&quot;https://www.google.com/url?q=https://github.com/wechaty/wechaty.js.org/issues/1133&amp;amp;sa=D&amp;amp;source=editors&amp;amp;ust=1629112006415252&amp;amp;usg=AOvVaw3FSZMDamAkYDe_QH7hv3LF&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Create tutorial pages for some of the bots mentioned on the &lt;a href=&quot;https://wechaty.js.org/docs/showcases/&quot;&gt;Showcases&lt;/a&gt; page (need feedback from the community members). The introduction team has already mentioned these bots &lt;a href=&quot;https://wechaty.js.org/docs/showcases/osschat-bot/&quot;&gt;here&lt;/a&gt;. Is it required to be added in tutorials also&lt;/li&gt;
+  &lt;li&gt;Merge &lt;a href=&quot;https://github.com/wechaty/wechaty.js.org/pull/865&quot;&gt;#865&lt;/a&gt; as it blocking progress of the Reference teams&lt;/li&gt;
+  &lt;li&gt;Review upon landing page video&lt;/li&gt;
+  &lt;li&gt;How to guides, gRPC, and Introduction teams are preparing their final project reports and expecting faster reviews on their PRs&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>rohitesh-kumar-jain</name></author><category term="gsod" /><category term="google" /><category term="gsod" /><category term="event" /><category term="gsod-2021" /><category term="2021" /><category term="zoom" /><category term="docs" /><summary type="html">Google Season of Docs’21 Eighth meeting</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-gsod-2021-eighth-meeting/gsod-eighth-meeting.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-gsod-2021-eighth-meeting/gsod-eighth-meeting.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Wechaty卡通P图插件，18行代码帮你实现变脸功能</title><link href="https://wechaty.js.org/2021/08/13/wechaty-face-carton/" rel="alternate" type="text/html" title="Wechaty卡通P图插件，18行代码帮你实现变脸功能" /><published>2021-08-13T00:00:00+00:00</published><updated>2021-08-13T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/13/wechaty-face-carton</id><content type="html" xml:base="https://wechaty.js.org/2021/08/13/wechaty-face-carton/">&lt;p&gt;Wechaty 人像转换插件，让你的 Wechaty 机器人实现照片卡通化，年龄变化，性别变化等功能。之前有看到过一些机器学习视频，可以把照片漫画化，感觉很有意思，就想着能不能结合 Wechaty 做一个可以自动返回动漫化照片的机器人。经过一番资料查找，发现腾讯有个人脸变换的功能，经过测试后，发现就是我想要的功能，而且效果还不错，关键是每个月有 1000 次的免费额度，这就很香了。三种转换模式就是 3000 次，白嫖不香么 😏，白嫖腾讯这就更香了，哈哈。&lt;/p&gt;
+
+&lt;p&gt;如果你说你的微信没法登陆网页版微信，没关系&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wechaty-puppet-wechat&lt;/code&gt;协议是基于 UOS 桌面版的，新账号也可以用的。&lt;/p&gt;
+
+&lt;h2 id=&quot;实现功能&quot;&gt;实现功能：&lt;/h2&gt;
+
+&lt;p&gt;私聊和群内都可以实现照片特效&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;多轮交互式对话实现
+    &lt;ul&gt;
+      &lt;li&gt;人脸照片动漫化&lt;/li&gt;
+      &lt;li&gt;人脸年龄变化&lt;/li&gt;
+      &lt;li&gt;人脸性别转换&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;效果展示&quot;&gt;效果展示&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-wechaty-face-carton/picall.webp&quot; alt=&quot;效果展示&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;准备腾讯云账号&quot;&gt;准备腾讯云账号&lt;/h2&gt;
+
+&lt;h3 id=&quot;开通照片转换功能&quot;&gt;开通照片转换功能&lt;/h3&gt;
+
+&lt;p&gt;登录&lt;a href=&quot;https://curl.qcloud.com/ZtRitpvH&quot;&gt;腾讯云&lt;/a&gt;账号，没有就直接 QQ 登录，直接点击管理控制台开通即可，不用付费，也不用选资源包，开通后自动有每个月 1000 次的免费额度，如果自己和朋友玩完全足够了。如果你是想活跃社群或者土豪，就随便充值了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-wechaty-face-carton/tencent.webp&quot; alt=&quot;腾讯云&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;获取腾讯的-secretid-和-secretkey&quot;&gt;获取腾讯的 secretid 和 secretkey&lt;/h3&gt;
+
+&lt;p&gt;访问此页面&lt;a href=&quot;https://console.cloud.tencent.com/cam/capi&quot;&gt;https://console.cloud.tencent.com/cam/capi&lt;/a&gt;获取你的&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;secretid&lt;/code&gt;和&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;secretkey&lt;/code&gt;,配置插件的时候需要用的到&lt;/p&gt;
+
+&lt;h2 id=&quot;使用步骤&quot;&gt;使用步骤&lt;/h2&gt;
+
+&lt;h3 id=&quot;1初始化项目&quot;&gt;1、初始化项目&lt;/h3&gt;
+
+&lt;p&gt;node环境需要自己配置一下，node&amp;gt;=14，。新建一个文件夹&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;face-carton&lt;/code&gt;，在文件夹内部执行&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm init&lt;/code&gt;，一路回车即可&lt;/p&gt;
+
+&lt;h3 id=&quot;2安装头像转化插件和-wechaty&quot;&gt;2、安装头像转化插件和 Wechaty&lt;/h3&gt;
+
+&lt;p&gt;这里说明一下，头像转化插件&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wechaty-face-carton&lt;/code&gt;就是我这次做的主要功能，已经开源在&lt;a href=&quot;https://github.com/leochen-g/wechaty-face-carton&quot;&gt;github&lt;/a&gt;，由于已经发布到npm，所以这里你只需要安装就可以使用了，对于不关心代码的童鞋，直接安装使用就行了。如果想知道代码怎么实现的，可以到github仓库查看一下源码。&lt;/p&gt;
+
+&lt;p&gt;配置 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm&lt;/code&gt; 源为淘宝源（重要，因为需要安装 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chromium&lt;/code&gt;，不配置的话下载会失败或者速度很慢，因为这个玩意 140M 左右）&lt;/p&gt;
+
+&lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;npm config set registry https://registry.npm.taobao.org
+npm config set disturl https://npm.taobao.org/dist
+npm config set puppeteer_download_host https://npm.taobao.org/mirrors
+
+npm install wechaty wechaty-face-carton wechaty-puppet-wechat --save
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3主要代码不超过20行&quot;&gt;3、主要代码（不超过20行）&lt;/h3&gt;
+
+&lt;p&gt;index.js&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Wechaty&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;wechaty&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;WechatyFaceCartonPlugin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;wechaty-face-carton&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;wechat-carton&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Wechaty&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;puppet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;wechaty-puppet-wechat&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;bot&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;use&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;WechatyFaceCartonPlugin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;maxuser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 支持最多多少人进行对话，建议不要设置太多，否则占用内存会增加&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;secretId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;腾讯secretId&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 腾讯secretId&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;secretKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;腾讯secretKey&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 腾讯secretKey&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;allowUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Leo_chen&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 允许哪些好友使用人像漫画化功能，为空[]代表所有人开启&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;allowRoom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;测试1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 允许哪些群使用人像漫画化功能，为空[]代表不开启任何一个群&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;quickModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 快速体验模式 默认关闭 开启后可直接生成二维码扫描体验，如果自己代码有登录逻辑可以不配置此项&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;tipsword&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;卡通&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 私聊发送消息，触发照片卡通化提示 如果直接发送图片，默认进入图片卡通化功能，不填则当用户初次发送文字消息时不做任何处理&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;参数说明&quot;&gt;参数说明&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;参数名&lt;/th&gt;
+      &lt;th&gt;必填&lt;/th&gt;
+      &lt;th&gt;默认值&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;maxuser&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;20&lt;/td&gt;
+      &lt;td&gt;支持最多多少人进行对话，建议不要设置太多，否则占用内存会增加&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;secretId:&lt;/td&gt;
+      &lt;td&gt;是&lt;/td&gt;
+      &lt;td&gt;’’&lt;/td&gt;
+      &lt;td&gt;腾讯 secretId&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;secretKey&lt;/td&gt;
+      &lt;td&gt;是&lt;/td&gt;
+      &lt;td&gt;’’&lt;/td&gt;
+      &lt;td&gt;腾讯 secretKey&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;allowUser&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;允许哪些好友使用人像漫画化功能，为空[]代表所有人开启&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;allowRoom&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;[]&lt;/td&gt;
+      &lt;td&gt;允许哪些群使用人像漫画化功能，为空[]代表不开启任何一个群&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;quickModel&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+      &lt;td&gt;快速体验模式 默认关闭 开启后可直接生成二维码扫描体验，如果自己代码有登录逻辑可以不配置此项，如果是单独使用此插件，建议开启&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;tipsword&lt;/td&gt;
+      &lt;td&gt;否&lt;/td&gt;
+      &lt;td&gt;‘卡通’&lt;/td&gt;
+      &lt;td&gt;私聊发送消息，触发照片卡通化提示。如果直接发送图片，默认进入图片卡通化功能，不填则当用户初次发送文字消息时不做任何处理，建议填写触发关键词&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;4运行&quot;&gt;4、运行&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node index.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;扫码登录后，给小助手发送图片，即可转化图片，对于不能转化的图片，小助手会给出原因&lt;/p&gt;
+
+&lt;h2 id=&quot;docker运行&quot;&gt;docker运行&lt;/h2&gt;
+
+&lt;h3 id=&quot;1新建dockerfile&quot;&gt;1、新建Dockerfile&lt;/h3&gt;
+
+&lt;p&gt;如果遇到过多的环境问题让你非常苦恼，你也可以在以上第三步完成后，根目录新建一个&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;文件，里面填入内容，对！就一行就行！&lt;/p&gt;
+
+&lt;div class=&quot;language-docker highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; wechaty/onbuild&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;2build镜像&quot;&gt;2、build镜像&lt;/h3&gt;
+
+&lt;p&gt;完成后就可以直接build镜像&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; wechaty-carton &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;3运行镜像&quot;&gt;3、运行镜像&lt;/h3&gt;
+
+&lt;p&gt;build完成后就可以直接run后扫码了&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run wechaty-carton
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;注意&quot;&gt;注意&lt;/h2&gt;
+
+&lt;p&gt;要注意一下，不要把额度用超了，用超了就不能用了。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;历史文章&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/2020/05/31/wechaty-web-panel-plugin/&quot;&gt;wechaty-web-panel可视化插件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/2019/06/21/three-step-get-girlfriend/&quot;&gt;三步教你用Node做一个微信脱单神器，小白可上手&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wechaty.js.org/2021/04/13/wechaty-uos-web/&quot;&gt;重磅：使用UOS微信桌面版协议登录，wechaty免费版web协议重放荣光&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;作者: &lt;a href=&quot;https://github.com/leochen-g/&quot;&gt;Leo_chen&lt;/a&gt;，全栈工程师，喜欢使用node做各种项目&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>leochen-g</name></author><category term="article" /><category term="code" /><category term="face-carton" /><category term="plugin" /><summary type="html">Wechaty 人像转换插件，让你的 Wechaty 机器人实现照片卡通化，年龄变化，性别变化等功能。之前有看到过一些机器学习视频，可以把照片漫画化，感觉很有意思，就想着能不能结合 Wechaty 做一个可以自动返回动漫化照片的机器人。经过一番资料查找，发现腾讯有个人脸变换的功能，经过测试后，发现就是我想要的功能，而且效果还不错，关键是每个月有 1000 次的免费额度，这就很香了。三种转换模式就是 3000 次，白嫖不香么 😏，白嫖腾讯这就更香了，哈哈。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-wechaty-face-carton/main.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-wechaty-face-carton/main.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The community matrix server is online!</title><link href="https://wechaty.js.org/2021/08/12/the-matrix-server-of-wechaty/" rel="alternate" type="text/html" title="The community matrix server is online!" /><published>2021-08-12T00:00:00+00:00</published><updated>2021-08-12T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/12/the-matrix-server-of-wechaty</id><content type="html" xml:base="https://wechaty.js.org/2021/08/12/the-matrix-server-of-wechaty/">&lt;h2 id=&quot;about-matrix&quot;&gt;About Matrix&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://matrix.org/&quot;&gt;Matrix&lt;/a&gt; is a secure and distributed open source chat network that can provide us with communication functions similar to most social software. With complete message encryption, identity authentication and other security functions , Matrix also supports cross-server communication; At the same time, the Matrix community also provides multiple sets of clients, as well as plug-ins such as video chat, voice chat, SSO, system monitor, and user management. Matrix is a powerful open source social server, which is very suitable as a communication tool for the open source community.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-community-matrix-server-is-online&quot;&gt;The community matrix server is online&lt;/h2&gt;
+
+&lt;p&gt;Thanks to Mr. Eric Migicovsky (the founder of &lt;a href=&quot;https://www.beeper.com/&quot;&gt;Beeper.com&lt;/a&gt;) for his support and sponsorship, the Matrix server of the Wechaty community has been launched on August 12, 2021, mainly for community members and Wechaty users communicate online.&lt;/p&gt;
+
+&lt;p&gt;The server currently supports github account login (recommended), opens the invitation-free registration function, provides basic chat functions and voice and video conversation functions, and supports communication with other matrix server accounts.&lt;/p&gt;
+
+&lt;p&gt;The Matrix server address is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matrix.wechaty.tk&lt;/code&gt;, it is recommended to access through the &lt;a href=&quot;https://matrix.org/docs/projects/try-matrix-now.html#clients&quot;&gt;matrix client&lt;/a&gt; such as &lt;a href=&quot;https://element.io/get-started/&quot;&gt;element&lt;/a&gt;, you can also log in directly through the &lt;a href=&quot;https://element.wechaty.tk/#/login&quot;&gt;web client&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Welcome everyone to pay attention to the &lt;a href=&quot;https://github.com/wechaty/matrix-appservice-wechaty&quot;&gt;matrix-appservice-wechaty project&lt;/a&gt; of our community, this project can help users accept the message from various social applications (such as WeChat, Wecom, Lark, etc.) supported by wechaty in a private matrix server， can currently be quickly deployed through the scripts on &lt;a href=&quot;https://github.com/lprintf/easy-matrix-wechaty&quot;&gt;easy-matrix-wechaty project&lt;/a&gt;. We will take every issue raised on these projects seriously. You are also welcome to pay attention to the &lt;a href=&quot;https://www.beeper.com/&quot;&gt;Beeper.com&lt;/a&gt; application, which supports receiving messages from common social applications on the market (such as Whatsapp, Facebook, etc.) in one application.&lt;/p&gt;
+
+&lt;h2 id=&quot;matters-needing-attention&quot;&gt;Matters needing attention&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The home room of the wechaty community is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#home:wechaty.tk&lt;/code&gt;, welcome the users from other matrix server to join it;&lt;/li&gt;
+  &lt;li&gt;The server does not enable Google human verification, please do not use robots to frequently request;&lt;/li&gt;
+  &lt;li&gt;The server is prohibited from being used for illegal purposes, and the community reserves the right to monitor unencrypted chat rooms;&lt;/li&gt;
+  &lt;li&gt;The community will warn or ban users who violate the rules.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;matrix简介&quot;&gt;Matrix简介&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://matrix.org/&quot;&gt;Matrix&lt;/a&gt;是一套安全的分布式的开源聊天网络，可以为我们提供和大多数社交软件类似的通讯功能，拥有完善的消息加密，身份认证等安全功能，支持跨服务器通讯；同时Matrix社区还提供了多套客户端，以及视频、语音聊天，第三方登录，系统监控，用户管理等插件。Matrix是一套功能强大的开源社交服务器，很适合作为开源社区的通讯工具。&lt;/p&gt;
+
+&lt;h2 id=&quot;社区matrix服务器的上线&quot;&gt;社区Matrix服务器的上线&lt;/h2&gt;
+
+&lt;p&gt;感谢Eric Migicovsky(the founder of &lt;a href=&quot;https://www.beeper.com/&quot;&gt;Beeper.com&lt;/a&gt;)的赞助，Wechaty社区的Matrix服务器已在2021年8月12号正式上线，主要供社区成员及wechaty使用者线上交流沟通使用。&lt;/p&gt;
+
+&lt;p&gt;该服务器目前支持github账号登录（推荐方式），开放免邀请的注册功能，提供基本聊天功能和语音、视频会话功能，支持与其他matrix服务器的账号进行交流。&lt;/p&gt;
+
+&lt;p&gt;该Matrix服务器地址为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;matrix.wechaty.tk&lt;/code&gt;，推荐通过&lt;a href=&quot;https://matrix.org/docs/projects/try-matrix-now.html#clients&quot;&gt;matrix客户端&lt;/a&gt;如&lt;a href=&quot;https://element.io/get-started&quot;&gt;element&lt;/a&gt;访问,也可通过&lt;a href=&quot;https://element.wechaty.tk/#/login&quot;&gt;网页客户端&lt;/a&gt;直接登录。&lt;/p&gt;
+
+&lt;p&gt;欢迎大家关注社区的&lt;a href=&quot;https://github.com/wechaty/matrix-appservice-wechaty&quot;&gt;matrix-appservice-wechaty项目&lt;/a&gt;,该项目可帮助用户在私有matrix服务器中接受各种wechaty能支持的应用的消息（如：微信，企业微信，飞书等），目前可通过&lt;a href=&quot;https://github.com/lprintf/easy-matrix-wechaty&quot;&gt;easy-matrix-wechaty项目&lt;/a&gt;中的脚本快速部署体验。我们会认真对待大家在这些项目中提出的每一个issue。也欢迎大家关注&lt;a href=&quot;https://www.beeper.com/&quot;&gt;Beeper.com&lt;/a&gt;应用，支持在一个应用内接收市面上常见应用的消息（如：Whatsapp，Facebook等）。&lt;/p&gt;
+
+&lt;h2 id=&quot;注意事项&quot;&gt;注意事项&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;社区公共聊天室账号是&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#home:wechaty.tk&lt;/code&gt;，欢迎其他matrix服务器的用户加入我们；&lt;/li&gt;
+  &lt;li&gt;为方便境内网络环境访问，该服务器未开启Google人类验证，请勿使用机器人频繁请求；&lt;/li&gt;
+  &lt;li&gt;该服务器禁止用于非法用途，社区保留对未加密聊天室的监控权利；&lt;/li&gt;
+  &lt;li&gt;社区会对违规用户进行警告或封号处理。&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>lprintf</name></author><category term="announcement" /><category term="matrix" /><summary type="html">About Matrix</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-the-matrix-server-of-wechaty/wechaty-matrix.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-the-matrix-server-of-wechaty/wechaty-matrix.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Docker Open Source Program ❤️ Wechaty</title><link href="https://wechaty.js.org/2021/08/10/docker-open-source-program/" rel="alternate" type="text/html" title="Docker Open Source Program ❤️ Wechaty" /><published>2021-08-10T00:00:00+00:00</published><updated>2021-08-10T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/10/docker-open-source-program</id><content type="html" xml:base="https://wechaty.js.org/2021/08/10/docker-open-source-program/">&lt;p&gt;In November, 2020, Docker announced the launch of a special program to expand our support for Open Source projects that use Docker. The eligible projects that meet the program’s requirements (ie. they must be open source and non-commercial) can request to have their respective OSS namespaces allowlisted and see their data-storage and data-egress restrictions lifted.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tweet: Docker has created a special program for Open Source projects to get continued free access and freedom from restrictions for their communities and their users. (&lt;a href=&quot;https://twitter.com/Docker/status/1323391404551393280&quot;&gt;link&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;open-source-project-qualification-criteria&quot;&gt;Open Source Project Qualification Criteria&lt;/h2&gt;
+
+&lt;p&gt;To qualify for the Open Source Program status, all the repos within the Publisher’s Docker namespace must:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Be public and non-commercial&lt;/li&gt;
+  &lt;li&gt;Meet the Open Source Initiative (OSI) definition (shown &lt;a href=&quot;https://opensource.org/docs/osd&quot;&gt;here&lt;/a&gt;), including definitions for free distribution, source code, derived works, integrity of source code, licensing and no tolerance for discrimination&lt;/li&gt;
+  &lt;li&gt;Distribute images under &lt;a href=&quot;https://opensource.org/licenses/alphabetical&quot;&gt;OSI approved open source license&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Produce Docker images used to run applications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;wechaty-joined-docker-open-source-program&quot;&gt;Wechaty joined Docker Open Source Program&lt;/h2&gt;
+
+&lt;p&gt;The Wechaty open-source project is very glad to announce that we has been accepted by the &lt;a href=&quot;https://www.docker.com/blog/supporting-open-source-projects-at-docker/&quot;&gt;Docker Open Source Program&lt;/a&gt; today, as one of hundreds of non-profit organizations from the four corners of the world in this program, we will be having supported by the Docker and none of the following egress restrictions will apply to any Docker users pulling images from our approved OSS namespaces:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unauthenticated users will be restricted to 100 pulls every 6 hours&lt;/li&gt;
+  &lt;li&gt;Authenticated free users will be restricted to 200 pulls every 6 hours&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;letter-from-docker-to-wechaty&quot;&gt;Letter from Docker to Wechaty&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Welcome to the Docker Open Source Program!  We are very excited to have you as a part of our great community.  We have allow-listed your namespace “Wechaty” and this should come into effect in the next week or so. With this allowed-listing, the Docker data pull rate policies that went into effect last November, will not apply to the users pulling images from your namespace.&lt;/p&gt;
+
+  &lt;p&gt;— Aurelien Suarez, Docker Marketing Team.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Through this program, Docker remains committed to providing a platform where the non-commercial open source developers can continue collaborating, innovating and pushing this industry into new directions.&lt;/p&gt;
+
+&lt;p&gt;Thank you Docker!&lt;/p&gt;
+
+&lt;p&gt;Related links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/blog/expanded-support-for-open-source-software-projects/&quot;&gt;Expanded Support for Open Source Software Projects, Marina Kvitnitsky, Nov 02 2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/blog/supporting-open-source-projects-at-docker/&quot;&gt;Docker Open Source Program&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/blog/supporting-open-source-projects-at-docker/&quot;&gt;Supporting Open Source Projects at Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>huan</name></author><category term="announcement" /><category term="docker" /><category term="program" /><category term="news" /><summary type="html">In November, 2020, Docker announced the launch of a special program to expand our support for Open Source projects that use Docker. The eligible projects that meet the program’s requirements (ie. they must be open source and non-commercial) can request to have their respective OSS namespaces allowlisted and see their data-storage and data-egress restrictions lifted.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-docker-open-source-program/docker-wechaty-osp.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-docker-open-source-program/docker-wechaty-osp.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">使用 VS Code 调试 Node.js 应用</title><link href="https://wechaty.js.org/2021/08/08/vscode-debug-nodejs/" rel="alternate" type="text/html" title="使用 VS Code 调试 Node.js 应用" /><published>2021-08-08T00:00:00+00:00</published><updated>2021-08-08T00:00:00+00:00</updated><id>https://wechaty.js.org/2021/08/08/vscode-debug-nodejs</id><content type="html" xml:base="https://wechaty.js.org/2021/08/08/vscode-debug-nodejs/">&lt;p&gt;「暑期 2021」活动中，我为 Wechaty 开发命令行环境下的客户端 &lt;a href=&quot;https://github.com/wechaty/cli&quot;&gt;wechaty-cli&lt;/a&gt;，使用 &lt;a href=&quot;https://github.com/chjj/blessed&quot;&gt;blessed&lt;/a&gt; 这个终端图形化组件库可以轻松做出炫酷的仿 IRC 聊天软件，原以为只需调库即可完成任务，但事情远没有那么简单…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-vscode-debug-nodejs/error.webp&quot; alt=&quot;error&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在我点击联系人列表时，应用瞬间崩溃，终端上只留下 npm 的常规报错，翻看对应日志也没有任何有效信息，这意味着没有明确的错误关键字可以一步到位地搜索，针对这种问题，我尝试按以下步骤解决：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;直接 Google 项目名称和场景，如 “blessed js crash”，但很可惜并没有任何有效结果，翻遍了 &lt;a href=&quot;https://stackoverflow.com/questions/tagged/blessed&quot;&gt;Stack OverFlow&lt;/a&gt; 上所有 blessed 相关问题都没有和我相同的情况。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;浏览 GitHub 原项目的 Issues 和 Pull Requests，比如我用到了 &lt;a href=&quot;https://github.com/yaronn/blessed-contrib#tree&quot;&gt;blessed-contrib&lt;/a&gt; 中的 Tree 组件，就可以搜索 Tree 相关的讨论，但很可惜仍然没有结果。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;尝试 catch 错误并输出，但因为 blessed 相当于在原来的终端之上加了一层， &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log(error)&lt;/code&gt; 这种常见做法行不通了，而且我也根本不知道在哪 catch。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;找不到报错信息，已经开始怀疑是自己的问题，仔细检查了一遍代码并严格使用 TypeScript 声明了类型，确保与文档描述一致，但错误仍旧。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;寻找使用同一个库同一个组件的代码，与自己的代码相比较，尝试从不同之处上找出崩溃原因所在。但全网使用 Tree 组件的项目半只手都数得过来，而且基本就是沿用了样例代码中实现的 File Explorer，找不出代码的问题。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;自己实在无法解决，可以在各种网站或交流群提问，但即使能提供详细的上下文信息，也不一定有人能够解答，毕竟终端命令行软件本就是小众领域，使用过 blessed 的人更可以说寥寥无几。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;总之，因为 blessed 实在有些冷门而且年久失修，在网络上无法找到所需的信息，我必须要独自面对一个没有人遇到过的问题，可我却连崩溃产生的原因都不清楚。难道我要一行行翻源码，脑补运行过程并人工审计代码？这显然不现实，所以只有通过调试，才能细致入微地理解程序的运行过程，从而找到问题所在。&lt;/p&gt;
+
+&lt;h2 id=&quot;vs-code-调试简介&quot;&gt;VS Code 调试简介&lt;/h2&gt;
+
+&lt;p&gt;VS Code 可能是前端领域现下最流行的开发工具，本文我们就以 VS Code 为例讲解调试的方法。&lt;/p&gt;
+
+&lt;p&gt;作为一个文本编辑器，VS Code 也提供了运行和调试的功能，但和其他一键运行的 IDE 不同，编辑器可不知道要运行何种程序，调试的功能也要安装插件来获得，所以自行配置文件是免不了的。即使是同一种编程语言，开发环境和运行方式上也可能会有差异，网上搜索到的现成配置文件不尽相同，盲目照抄往往会出现各种千奇百怪的报错，如果时间允许推荐阅读&lt;a href=&quot;https://code.visualstudio.com/docs/nodejs/nodejs-debugging&quot;&gt;官方文档&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;如果你此前没有进行过调试运行的配置，只需点击上方菜单栏 -&amp;gt; Run -&amp;gt; Add Configuration，并在弹出的框中选择 Node.js，就会自动在工作区内创建 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.vscode/launch.json&lt;/code&gt; 这个文件并打开，生成如下内容：&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Use&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;IntelliSense&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;learn&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;about&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;possible&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;attributes.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;Hover&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;descriptions&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;of&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;existing&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;attributes.&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;For&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;more&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;information&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;visit:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;https://go.microsoft.com/fwlink/?linkid=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;830387&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;0.2.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;configurations&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pwa-node&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Launch Program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;skipFiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;node_internals&amp;gt;/**&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+   &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;program&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;${file}&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;配置文件是 JSON 格式，鼠标悬浮到键名上会出现相应的提示，不过参数太多也不一定都用得到，这里我们只关注能让项目运行起来的参数，很明显就是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;program&lt;/code&gt; 制定了文件路径，比如我们如果使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node index.js&lt;/code&gt; 启动项目，那么 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;program&lt;/code&gt; 填 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.js&lt;/code&gt; 就可以。&lt;/p&gt;
+
+&lt;p&gt;但我的项目是用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ts-node&lt;/code&gt; 直接运行的，并没有编译好的 js 文件，直接填写 ts 文件明显会失败，于是我 Google 搜索了 “ts-node debug”，出来的前两条结果中的配置文件都过于复杂，添加了很多参数，其实只需要加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;runtimeExecutable&quot;: &quot;ts-node&quot;&lt;/code&gt; 就够了。&lt;/p&gt;
+
+&lt;p&gt;除了这一种配置，VS Code 还为我们提供了许多配置模板，再次点击 Add Configuration 或者在编辑状态按下 “Ctrl+Space”，会出现一长串配置列表，比如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Node.js: Launch via NPM&lt;/code&gt; 是通过像 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;npm start&lt;/code&gt; 这样的命令来运行项目的，这样做的好处是具体代码文件位置或名称改动不会影响调试运行。&lt;/p&gt;
+
+&lt;p&gt;不过对于某些需要与用户交互的程序，比如使用 blessed 开发的终端图形界面程序，这样启动默认是在 VS Code 内置的 Debug Console 中执行，无法接受输入，需要添加 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console&lt;/code&gt; 属性设为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integratedTerminal&lt;/code&gt; 或 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;externalTerminal&lt;/code&gt;，分别是在 VS Code 自带的 Terminal 中或用户设置的外部 Terminal 中执行，配置文件如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Lanch via NPM&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;launch&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;runtimeArgs&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;start&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;runtimeExecutable&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;npm&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;skipFiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;node_internals&amp;gt;/**&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pwa-node&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;console&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;integratedTerminal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;细心的小伙伴可能已经发现，上述配置文件的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;request&lt;/code&gt; 参数都设置为 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;launch&lt;/code&gt;，这意味着 VS Code 会直接启动程序并调试，和其他一键运行的 IDE 一样方便，不过有些时候我们仅仅需要调试而不想连带着捆绑启动的配置，所以 VS Code 也提供了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;attach&lt;/code&gt; 模式，是对已经打开的程序进行调试。比如模板中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Node.js: Attach&lt;/code&gt; 配置如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Attach&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;port&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9229&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;request&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;attach&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;skipFiles&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;node_internals&amp;gt;/**&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+ &lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pwa-node&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;要调试 Node.js 应用程序，只需执行形如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --inspect-brk program.js&lt;/code&gt; 命令，程序会在默认的 9229 端口等待调试器接入，在 VS Code 中点击开始调试后就会运行。对于用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ts-node&lt;/code&gt; 执行的命令，则要以形如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node --nolazy --inspect-brk=9229 -r ts-node/register program.ts&lt;/code&gt; 的方式运行。&lt;/p&gt;
+
+&lt;p&gt;如果嫌使用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--inspect&lt;/code&gt; 参数麻烦，使用模板配置 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Node.js: Attach by Process ID&lt;/code&gt; 则会自动弹出方框来选择对应正在运行的 Node.js 进程。如果连动动小手选择都不愿意，VS Code 还推出了 &lt;a href=&quot;https://code.visualstudio.com/docs/nodejs/nodejs-debugging#_auto-attach&quot;&gt;Auto Attach&lt;/a&gt; 功能，按下 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+Shift+P&lt;/code&gt; 输入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Toggle Auto Attach&lt;/code&gt;，选择 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;smart&lt;/code&gt; 模式，则只需在 VS Code 自带终端中执行 Node.js 程序，无需任何配置，VS Code 就会 Attach 你的程序并进行调试了。&lt;/p&gt;
+
+&lt;h2 id=&quot;栈溢出调试实战&quot;&gt;栈溢出调试实战&lt;/h2&gt;
+
+&lt;p&gt;介绍完了 VS Code 调试的基本配置，就可以来尝试解决文章最初遇到的问题了，直接开始调试并重现崩溃场景，程序退出后 Debug Console 中还能看到错误信息：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-log&quot;&gt;RangeError: Maximum call stack size exceeded
+at List.focus (cli/node_modules/blessed/lib/widgets/element.js:329:30)
+at Tree.render (cli/node_modules/blessed-contrib/lib/widget/tree.js:152:52)
+at cli/node_modules/blessed/lib/widgets/screen.js:738:8
+at Array.forEach (&amp;lt;anonymous&amp;gt;)
+at Screen.render (cli/node_modules/blessed/lib/widgets/screen.js:735:17)
+at reposition (cli/node_modules/blessed/lib/widgets/element.js:968:17)
+at Tree._labelScroll (cli/node_modules/blessed/lib/widgets/element.js:972:5)
+at Tree._emit (cli/node_modules/blessed/lib/events.js:94:20)
+at Tree.emit (cli/node_modules/blessed/lib/events.js:117:12)
+at Tree.scroll (cli/node_modules/blessed/lib/widgets/scrollablebox.js:274:17)
+at Tree.&amp;lt;anonymous&amp;gt; (cli/node_modules/blessed/lib/widgets/scrollablebox.js:222:8)
+at Screen._focus (cli/node_modules/blessed/lib/widgets/screen.js:1680:10)
+at Screen.focusPush (cli/node_modules/blessed/lib/widgets/screen.js:1620:8)
+at Screen.focused (cli/node_modules/blessed/lib/widgets/screen.js:1697:15)
+at List.focus (cli/node_modules/blessed/lib/widgets/element.js:329:30)
+...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;一下子就找到了问题的根源，应用本身的代码应该没有问题，而是在 blessed 库内部的代码中产生了无限循环，那么就可以在相应位置设下断点，观察代码执行顺序和变量值的变化，耐心地分析无限循环产生的原因。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2021/08-vscode-debug-nodejs/debug.webp&quot; alt=&quot;debug&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如图所示，在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tree.js&lt;/code&gt; 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tree.prototye.render&lt;/code&gt; 这一函数中 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if (this.screen.focused === this.rows) this.rows.focus();&lt;/code&gt; 这一语句可能导致 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Tree.render()&lt;/code&gt; 会调用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this.rows.focus()&lt;/code&gt;，将鼠标悬浮至 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this.screen.focused&lt;/code&gt; 发现与 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this.rows&lt;/code&gt; 为同一对象，这是无限循环上的一个环节，如果注释掉此行再运行便不再有崩溃了。不过此行代码或许起着必要的作用，不敢轻易删除，最终还是更改了应用的代码，在另一处上破坏了循环继续的条件，详情可见 &lt;a href=&quot;https://github.com/wechaty/cli/pull/13&quot;&gt;wechaty/cli#13&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;扩展阅读&quot;&gt;扩展阅读&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://code.visualstudio.com/blogs/2018/07/12/introducing-logpoints-and-auto-attach&quot;&gt;Introducing Logpoints and auto-attach&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.barretlee.com/blog/2019/03/18/debugging-in-vscode-tutorial/&quot;&gt;VSCode 调试中 launch.json 配置不完全指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.barretlee.com/blog/2015/10/07/debug-nodejs-in-command-line/&quot;&gt;NodeJS的代码调试和性能调优&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/7PNE3nBhpQOTN4stChvWzQ&quot;&gt;写 Node.js 代码，从学会调试开始&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Author:&lt;a href=&quot;https://github.com/chinggg&quot;&gt;@chinggg&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>chinggg</name></author><category term="article" /><category term="tutorial" /><category term="code" /><category term="debug" /><category term="nodejs" /><summary type="html">「暑期 2021」活动中，我为 Wechaty 开发命令行环境下的客户端 wechaty-cli，使用 blessed 这个终端图形化组件库可以轻松做出炫酷的仿 IRC 聊天软件，原以为只需调库即可完成任务，但事情远没有那么简单…</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://wechaty.js.org/assets/2021/08-vscode-debug-nodejs/debug.webp" /><media:content medium="image" url="https://wechaty.js.org/assets/2021/08-vscode-debug-nodejs/debug.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
